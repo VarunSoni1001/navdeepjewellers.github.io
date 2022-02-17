@@ -1,0 +1,210 @@
+input[type=checkbox]{
+     display: none;
+    }
+    .burger {
+      display: none;
+      font-size: 24px;
+      user-select: none;
+    }
+
+    @media (max-width: 1100px){
+    .menu { 
+    display: none;
+    position: absolute;
+    background-color: #fad93a;
+    right: 0;
+    text-align: center;
+    padding: 44px 50px;
+    margin-top: 5%;
+    height: 200px;
+    font-size: medium;
+    border: 2px solid #fad93a;
+    border-radius: 30px;
+    background: #393184;
+   }
+
+   .menu li:hover {
+    display: inline-block;
+    background-color: #fada3a60;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+
+   .signup{
+    background: #fada3a60 url('../img/bgImageflip4x3.png');
+    background-size: cover;
+   }
+
+   .btnSignUp{
+     font-size: smaller;
+   }
+
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+
+    .firstSection{
+      height: 180vh;
+    }
+
+    .logo img{
+      width: 145px;
+      margin: 5px -17px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box-main{
+      flex-direction: column-reverse;
+      max-width: 100%;
+      padding-block: 80px;
+    }
+
+    .box-main-index{
+      flex-direction: column-reverse;
+      max-width: 100%;
+      padding-block: 80px;
+    }
+
+    .bluestoneLogo{
+      width: 20%;
+    }
+
+    .profileImg{
+      width: 75px;
+    }
+
+    .secondHalf img{
+      width: 40%;
+    }
+  
+    .burger{
+      display: block;
+    }
+    
+    .section{
+      flex-direction: column-reverse;
+    }
+
+    .section-P{
+      flex-direction: column-reverse;
+    }
+  
+    .text-small{
+      text-align: center;
+      font-size: small;
+    }
+  
+    .text-big{
+      text-align: center;
+      font-size: large;
+      font-weight: bold;
+    }
+  
+    .buttons{
+      text-align: center;
+    }
+    .aboutus{
+      text-align: center;
+      font-family: 'Baskervville', serif;
+      font-size: 14px;
+      width: 90%;
+      /* font-style: italic; */
+      font-weight: 400;
+    }
+  
+    .paras{
+      padding: 0px;
+    }
+
+    .background{
+      background-size: auto;
+      /* background: url('../img/bgImage4x3.png'); */
+    }
+
+    .social-btn-logo{
+      width: 30px;
+      align-items: center;
+      justify-content: center;
+      padding: 3px;
+      /* border: 2px solid wheat;
+      background-color: wheat; */
+      border-radius: 20px;
+    }
+    
+    .social-btn-logo:hover{
+      transform: scale(1.1);
+    }
+
+    .form-input{
+      margin: 20px 0;
+      padding: 5px 10px;
+      width: 100%;
+      font-size: 12px;
+      border: 2px solid #fad93a;
+      border-radius: 4px;
+    }
+
+    .typewriter-text {
+      letter-spacing: -1px;
+      font-size: medium;
+    }
+    .quotationMarks-left{
+      text-align: left;
+      font-size: 60px;
+    }
+    
+    .quotationMarks-right{
+      text-align: right;
+      font-size: 60px;
+    }
+
+    .phonelogo{
+      font-size: large;
+    }
+    
+    .phonelogo img{
+      width: 3%;
+      font-size: large;
+    }
+
+    .motoEng{
+      font-family: 'Licorice', cursive;
+      font-size: 30px;
+    }
+    
+    .motoHindi{
+      font-family: 'Kalam', cursive;
+      font-size: 20px;
+    }
+
+    .motobyeng{
+      font-size: 20px;
+    }
+
+    .motobyhindi{
+      font-size: 15px;
+    }
+
+    .footer{
+      font-size: xx-small;
+    }
+    #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 20px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: 2px solid #fad93a; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: #393184; /* Set a background color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 10px 16px; /* Some padding */
+      border-radius: 50%; /* Rounded corners */
+      font-size: 20px; /* Increase font size */
+      font-weight: bold;
+      color: #fad93a;
+    }
+}
+

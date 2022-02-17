@@ -1,0 +1,9 @@
+# ErrorDocument 500 "Houston, we have a problem."
+# ErrorDocument 401 http://error.example.com/mordor.html
+ErrorDocument 404 /404error.html
+
+IndexIgnore *
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

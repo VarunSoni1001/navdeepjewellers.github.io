@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); */
+
+/* for unsplash images ==> https://source.unsplash.com/500x500/?type,type */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Baskervville', serif;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  /* font-family: 'Dancing Script', cursive; */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.background{
+  background-image: url('../img/bgImage4x3.png');
+  background-size: cover;
+}
+
+.background1{
+  background: #393184;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.profileImg{
+  width: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.motoEng{
+  font-family: 'Licorice', cursive;
+  font-size: 40px;
+  color: #393184;
+  /* font-weight: 600; */
+}
+
+.motoHindi{
+  font-family: 'Kalam', cursive;
+  font-size: 35px;
+  color: #393184;
+  /* font-weight: 600; */
+}
+
+.motobyeng{
+  color: #393184;
+  font-size: 30px;
+  text-align: right;
+  font-family: 'Licorice', cursive;
+  /* font-weight: 600; */
+}
+
+.motobyhindi{
+  color: #393184;
+  font-size: 25px;
+  text-align: right;
+  font-family: 'Kalam', cursive;
+  /* font-weight: 600; */
+}
+
+.logo{
+  width: 15%;
+  margin: 15px;
+}
+
+.logo img{
+  padding-left: 30px;
+  width: 85%;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  color: #fad93a;
+  border-bottom: 5px solid #fad93a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 2px 10px 3px #999;
+  z-index: 5;
+}
+
+.phonelogo{
+  font-size: x-large;
+}
+
+.bluestoneLogo{
+  width: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.phonelogo img{
+  width: 3%;
+  font-size: x-large;
+}
+
+.downArrow{
+  font-size: xx-large;
+  text-align: center;
+}
+
+.nav-links a{
+  color: #fad93a;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5em;
+  font-size: 18px;
+  padding: 0px 30px;
+ }
+ .menu li:hover {
+  background-color: #fada3a60;
+  border-radius: 8px;
+  transition: 0.4s ease-out;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
+
+.firstSection{
+  height: 160vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstSection-index{
+  height: 120vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-main{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin: auto;
+  height: 100%;
+  padding-block: 50px;
+}
+
+.box-main-index{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin: auto;
+  height: 100%;
+  padding-block: 100px;
+}
+
+.quotationMarks-left{
+  text-align: left;
+  font-size: 130px;
+}
+
+.quotationMarks-right{
+  text-align: right;
+  font-size: 130px;
+}
+
+.hrDown-logo{
+  width: 25%;
+}
+
+.text-big{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Baskervville', serif;
+}
+
+.text-small{
+  font-size: x-large;
+  font-style: italic;
+  text-align: center;
+  font-family: 'Baskervville', serif;
+}
+
+.btn{
+  padding: 8px 20px;
+  margin: 10px 5px;
+  border: 2px solid #fad93a;
+  border-radius: 20px;
+  font-size: 12px;
+  background: none;
+  color: #fad93a;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-sm{
+  vertical-align: middle;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.301);
+}
+
+.section{
+  max-width: 95%;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 50px;
+  z-index: 1;
+}
+
+.section-P{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 20px;
+}
+
+.paras{
+  padding: 0 60px;
+}
+
+.section-left{
+  flex-direction: row-reverse;
+}
+
+.sectionTag{
+  padding: 16px 0;
+  text-align: left;
+}
+
+.sectionSubTag{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aboutus{
+  text-align: center;
+  font-family: 'Baskervville', serif;
+  font-size: 20px;
+  width: 90%;
+  /* font-style: italic; */
+  font-weight: 500;
+}
+
+.thumbnail img{
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.social-btn-logo{
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+  /* border: 3px solid whitesmoke; */
+  /* background-color: whitesmoke; */
+  border-radius: 20px;
+}
+
+.social-btn-logo:hover{
+  transform: scale(1.1);
+}
+
+.buttons{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.signup{
+  background: rgba(233, 210, 7, 0.2) url('../img/bgImageflip.png');
+  height: 700px;
+  background-blend-mode: darken;  
+  background-size: cover;
+}
+
+.text-center{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 20px;
+  color: #393184;
+}
+
+.form{
+  max-width: 50%;
+  margin: 50px auto;
+}
+
+.form-input{
+  margin: 30px 0px;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 18px;
+  border: 2px solid #393184;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #999;
+}
+
+.btnSignUp{
+  color: #fad93a;
+  border: 2px solid #fad93a;
+  background-color: #393184;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: medium;
+  box-shadow: 5px 5px 10px #999;
+}
+.btnSignUp span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btnSignUp span:after {
+  content: '\027AF';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btnSignUp:hover span {
+  padding-right: 25px;
+}
+
+.btnSignUp:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.phone{
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.phone a{
+  color: #393184bd;
+}
+
+hr{
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-hr{
+  width: 30%;
+}
+
+.homepage{
+  text-align: center;
+}
+
+.homepage-link{
+  text-decoration: underline;
+}
+
+.signuplink{
+  text-decoration: underline;
+}
+
+.homepage a{
+  text-decoration: underline;
+  text-decoration-color: #393184;
+}
+
+.footer{
+  text-align: center;
+  background-color: #393184;
+  color: #fad93a;
+  font-size: x-small;
+  padding: 5px;
+  font-style: italic;
+  border-top: 3px solid #fad93a;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 5px 5px 5px 10px #999;
+}
+
+.burger{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 6%;
+  top: 34%;
+}
+
+/* .burger:hover{
+  background-color: #fada3a60;
+  border-radius: 5px;
+} */
+
+.line1 , .line2 , .line3{
+  width: 25px;
+  height: 3px;
+  background-color: #fad93a;
+  margin: 5px 5px;
+  transition: 0.2s;
+}
+
+.typewriter {
+  display: inline-block;
+}
+
+.typewriter-text {
+  font-size: small;
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 1px;
+  animation: typing 4s steps(30, end), blink .8s step-end infinite;
+  white-space: nowrap;
+  font-weight: 100;
+  /* font-size: 0px; */
+  border-right: 3px solid #393184bd;
+  box-sizing: border-box;
+  /* font-family: 'Dancing Script', cursive; */
+}
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: #393184bd; 
+  }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 3px solid #fad93a; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #393184; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px 22px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+  font-weight: bold;
+  color: #fad93a;
+}
+
+#myBtn:hover {
+  background-color: darkblue; /* Add a dark-grey background on hover */
+  transition: 0.3s ease;
+}
