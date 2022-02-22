@@ -11,10 +11,10 @@ input[type=checkbox]{
     .menu { 
     display: none;
     position: absolute;
-    background-color: #fad93a;
+    /* background-color: #fad93a; */
     right: 0;
     text-align: center;
-    padding: 44px 50px;
+    padding: 45px 50px;
     margin-top: 5%;
     height: 200px;
     font-size: medium;
@@ -25,7 +25,7 @@ input[type=checkbox]{
 
    .menu li:hover {
     display: inline-block;
-    background-color: #fada3a60;
+    background: none;
    }
    .menu li + li {
     margin-top: 12px;
@@ -104,6 +104,9 @@ input[type=checkbox]{
   
     .buttons{
       text-align: center;
+    }
+    .buttons p{
+      font-size: x-small;
     }
     .aboutus{
       text-align: center;

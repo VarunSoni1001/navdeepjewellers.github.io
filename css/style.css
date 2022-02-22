@@ -292,6 +292,10 @@ li {
   text-align: center;
 }
 
+.buttons a{
+  color: black;
+}
+
 .signup{
   background: rgba(233, 210, 7, 0.2) url('../img/bgImageflip.png');
   height: 700px;
@@ -419,7 +423,7 @@ hr{
   border-radius: 5px;
 } */
 
-.line1 , .line2 , .line3{
+.line1 ,.line2 , .line3{
   width: 25px;
   height: 3px;
   background-color: #fad93a;
