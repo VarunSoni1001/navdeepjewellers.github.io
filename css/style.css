@@ -12,9 +12,11 @@
   font-family: 'Baskervville', serif;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
-  outline: none !important;
   -webkit-tap-highlight-color: transparent !important;
   /* font-family: 'Dancing Script', cursive; */
+}
+*:focus{
+  outline: none !important;
 }
 
 html{
@@ -341,7 +343,7 @@ li {
 }
 
 .btnSignUp span:after {
-  content: '\027AF';
+  content: '\000BB';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -463,7 +465,7 @@ hr{
       border-color: transparent 
   }
   50% { 
-      border-color: #393184bd; 
+      border-color: #fada3a; 
   }
 }
 
@@ -489,3 +491,5 @@ hr{
   background-color: darkblue; /* Add a dark-grey background on hover */
   transition: 0.3s ease;
 }
+
+
