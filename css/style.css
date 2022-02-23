@@ -179,12 +179,16 @@ li {
 
 .quotationMarks-left{
   text-align: left;
-  font-size: 130px;
+  font-size: 100px;
+  padding-left: 50px;
+  color: #393184;
 }
 
 .quotationMarks-right{
   text-align: right;
-  font-size: 130px;
+  font-size: 100px;
+  padding-right: 50px;
+  color: #393184;
 }
 
 .hrDown-logo{
@@ -295,7 +299,8 @@ li {
 }
 
 .buttons a{
-  color: black;
+  color: rgba(0, 0, 0, 0.800);
+  padding: 5px;
 }
 
 .signup{
@@ -308,8 +313,12 @@ li {
 .text-center{
   text-align: center;
   padding-top: 30px;
-  font-size: 20px;
+  font-size: x-large;
   color: #393184;
+}
+
+.signuplink{
+  color: #fada3a;
 }
 
 .form{
@@ -324,7 +333,7 @@ li {
   font-size: 18px;
   border: 2px solid #393184;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px #999;
+  /* box-shadow: 5px 5px 10px #999; */
 }
 
 .btnSignUp{
@@ -333,7 +342,7 @@ li {
   background-color: #393184;
   font-family: 'Ubuntu', sans-serif;
   font-size: medium;
-  box-shadow: 5px 5px 10px #999;
+  /* box-shadow: 5px 5px 10px #999; */
 }
 .btnSignUp span {
   cursor: pointer;
@@ -359,6 +368,83 @@ li {
   opacity: 1;
   right: 0;
 }
+
+.AU span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.AU span:after {
+  content: '\000BB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.AU:hover span {
+  padding-right: 25px;
+}
+
+.AU:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.OP span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.OP span:after {
+  content: '\000BB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.OP:hover span {
+  padding-right: 25px;
+}
+
+.OP:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.CU span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.CU span:after {
+  content: '\000BB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.CU:hover span {
+  padding-right: 25px;
+}
+
+.CU:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 
 .phone{
   text-align: center;
@@ -403,7 +489,7 @@ hr{
   text-align: center;
   background-color: #393184;
   color: #fad93a;
-  font-size: x-small;
+  font-size: 10px;
   padding: 5px;
   font-style: italic;
   border-top: 3px solid #fad93a;
@@ -435,6 +521,7 @@ hr{
 
 .typewriter {
   display: inline-block;
+  color: #393184;
 }
 
 .typewriter-text {
@@ -469,13 +556,22 @@ hr{
   }
 }
 
+#reviews{
+  border-radius: 2px 150px 150px 150px;
+  border-left: 2px solid #393184;
+  border-right: 10px solid #393184;
+  border-bottom: 15px solid #393184;
+  border-top: 5px solid #393184;
+  box-shadow: 10px 5px 10px #fada3a;
+}
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: 3px solid #fad93a; /* Remove borders */
+  border: 2px solid #fad93a; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #393184; /* Set a background color */
   color: white; /* Text color */
@@ -488,8 +584,8 @@ hr{
 }
 
 #myBtn:hover {
-  background-color: darkblue; /* Add a dark-grey background on hover */
-  transition: 0.3s ease;
+  background-color: #393184bd; /* Add a dark-grey background on hover */
+  transition: 0.2s ease;
 }
 
 
