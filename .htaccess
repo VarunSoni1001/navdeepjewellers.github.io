@@ -1,6 +1,6 @@
 # ErrorDocument 500 "Houston, we have a problem."
 # ErrorDocument 401 http://error.example.com/mordor.html
-ErrorDocument 404 /404error.html
+ErrorDocument 404 /sub/404error.html
 
 IndexIgnore *
 
