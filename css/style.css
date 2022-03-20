@@ -135,6 +135,7 @@ li {
   gap: 1.5em;
   font-size: 18px;
   padding: 0px 30px;
+  /* transition: ease; */
  }
  .menu li:hover {
   background-color: #fada3a60;

@@ -21,6 +21,7 @@ input[type=checkbox]{
     border: 2px solid #fad93a;
     border-radius: 30px;
     background: #393184b0;
+    /* animation: 0 500ms ease-out; */
    }
 
    .menu li:hover {
@@ -29,6 +30,8 @@ input[type=checkbox]{
    }
    .menu li + li {
     margin-top: 12px;
+    /* transition: 0.5s ease-out; */
+    /* animation: 0 500ms ease-out; */
    }
 
    .signup{
@@ -42,6 +45,7 @@ input[type=checkbox]{
 
    input[type=checkbox]:checked ~ .menu{
     display: block;
+    
    }
 
     .firstSection{
