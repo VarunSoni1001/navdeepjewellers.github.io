@@ -1,14 +1,14 @@
-input[type=checkbox]{
-     display: none;
-    }
-    .burger {
-      display: none;
-      font-size: 24px;
-      user-select: none;
-    }
+input[type="checkbox"] {
+  display: none;
+}
+.burger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
 
-    @media (max-width: 1100px){
-    .menu { 
+@media (max-width: 1100px) {
+  .menu {
     display: none;
     position: absolute;
     /* background-color: #fad93a; */
@@ -22,211 +22,209 @@ input[type=checkbox]{
     border-radius: 30px;
     background: #393184b0;
     /* animation: 0 500ms ease-out; */
-   }
+  }
 
-   .menu li:hover {
+  .menu li:hover {
     display: inline-block;
     background: none;
-   }
-   .menu li + li {
+  }
+  .menu li + li {
     margin-top: 12px;
     /* transition: 0.5s ease-out; */
     /* animation: 0 500ms ease-out; */
-   }
+  }
 
-   .signup{
-    background: #fada3a60 url('../img/bgImageflip4x3.png');
+  .signup {
+    background: #fada3a60 url("../img/bgImageflip4x3.png");
     background-size: cover;
-   }
+  }
 
-   .btnSignUp{
-     font-size: smaller;
-   }
+  .btnSignUp {
+    font-size: smaller;
+  }
 
-   input[type=checkbox]:checked ~ .menu{
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
-    
-   }
+  }
 
-    .firstSection{
-      height: 180vh;
-    }
+  .firstSection {
+    height: 180vh;
+  }
 
-    .logo img{
-      width: 145px;
-      margin: 5px -17px;
-      align-items: center;
-      justify-content: center;
-    }
+  .logo img {
+    width: 145px;
+    margin: 5px -17px;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .box-main{
-      flex-direction: column-reverse;
-      max-width: 100%;
-      padding-block: 80px;
-    }
+  .box-main {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding-block: 80px;
+  }
 
-    .box-main-index{
-      flex-direction: column-reverse;
-      max-width: 100%;
-      padding-block: 80px;
-    }
+  .box-main-index {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding-block: 80px;
+  }
 
-    .bluestoneLogo{
-      width: 20%;
-    }
+  .bluestoneLogo {
+    width: 20%;
+  }
 
-    .profileImg{
-      width: 75px;
-    }
+  .profileImg {
+    width: 75px;
+  }
 
-    .secondHalf img{
-      width: 40%;
-    }
-  
-    .burger{
-      display: block;
-    }
-    
-    .section{
-      flex-direction: column-reverse;
-    }
+  .secondHalf img {
+    width: 40%;
+  }
 
-    .section-P{
-      flex-direction: column-reverse;
-    }
-  
-    .text-small{
-      text-align: center;
-      font-size: small;
-    }
-  
-    .text-big{
-      text-align: center;
-      font-size: large;
-      font-weight: bold;
-    }
-  
-    .buttons{
-      text-align: center;
-    }
-    .buttons p{
-      font-size: small;
-    }
-    .aboutus{
-      text-align: center;
-      font-family: 'Baskervville', serif;
-      font-size: 14px;
-      width: 90%;
-      /* font-style: italic; */
-      font-weight: 400;
-    }
-  
-    .paras{
-      padding: 0px;
-    }
+  .burger {
+    display: block;
+  }
 
-    .background{
-      background-size: auto;
-      /* background: url('../img/bgImage4x3.png'); */
-    }
+  .section {
+    flex-direction: column-reverse;
+  }
 
-    .social-btn-logo{
-      width: 30px;
-      align-items: center;
-      justify-content: center;
-      padding: 3px;
-      /* border: 2px solid wheat;
+  .section-P {
+    flex-direction: column-reverse;
+  }
+
+  .text-small {
+    text-align: center;
+    font-size: small;
+  }
+
+  .text-big {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+  .buttons p {
+    font-size: small;
+  }
+  .aboutus {
+    text-align: center;
+    font-family: "Baskervville", serif;
+    font-size: 14px;
+    width: 90%;
+    /* font-style: italic; */
+    font-weight: 400;
+  }
+
+  .paras {
+    padding: 0px;
+  }
+
+  .background {
+    background-size: auto;
+    /* background: url('../img/bgImage4x3.png'); */
+  }
+
+  .social-btn-logo {
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    /* border: 2px solid wheat;
       background-color: wheat; */
-      border-radius: 20px;
-    }
-    
-    .social-btn-logo:hover{
-      transform: scale(1.1);
-    }
+    border-radius: 20px;
+  }
 
-    .form-input{
-      margin: 20px 0;
-      padding: 5px 10px;
-      width: 100%;
-      font-size: 10px;
-      border: 2px solid #393184b0;
-      border-radius: 5px;
-    }
+  .social-btn-logo:hover {
+    transform: scale(1.1);
+  }
 
-    .typewriter-text {
-      letter-spacing: -1px;
-      font-size: medium;
-    }
-    .quotationMarks-left{
-      text-align: left;
-      font-size: 60px;
-      padding-left: 25px;
-    }
-    
-    .quotationMarks-right{
-      text-align: right;
-      font-size: 60px;
-      padding-right: 25px;
-    }
+  .form-input {
+    margin: 20px 0;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 10px;
+    border: 2px solid #393184b0;
+    border-radius: 5px;
+  }
 
-    .text-center{
-      font-size: medium;
-    }
+  .typewriter-text {
+    letter-spacing: -1px;
+    font-size: medium;
+  }
+  .quotationMarks-left {
+    text-align: left;
+    font-size: 60px;
+    padding-left: 25px;
+  }
 
-    #reviews{
-      border-radius: 2px 100px 100px 100px;
-      border-left: 1.5px solid #393184;
-      border-right: 10px solid #393184;
-      border-bottom: 8px solid #393184;
-      border-top: 2px solid #393184;
-      box-shadow: 5px 5px 10px #fada3a;
-    }
+  .quotationMarks-right {
+    text-align: right;
+    font-size: 60px;
+    padding-right: 25px;
+  }
 
-    .phonelogo{
-      font-size: large;
-    }
-    
-    .phonelogo img{
-      width: 3%;
-      font-size: large;
-    }
+  .text-center {
+    font-size: medium;
+  }
 
-    .motoEng{
-      font-family: 'Licorice', cursive;
-      font-size: 30px;
-    }
-    
-    .motoHindi{
-      font-family: 'Kalam', cursive;
-      font-size: 20px;
-    }
+  #reviews {
+    border-radius: 2px 100px 100px 100px;
+    border-left: 1.5px solid #393184;
+    border-right: 10px solid #393184;
+    border-bottom: 8px solid #393184;
+    border-top: 2px solid #393184;
+    box-shadow: 5px 5px 10px #fada3a;
+  }
 
-    .motobyeng{
-      font-size: 20px;
-    }
+  .phonelogo {
+    font-size: large;
+  }
 
-    .motobyhindi{
-      font-size: 15px;
-    }
+  .phonelogo img {
+    width: 3%;
+    font-size: large;
+  }
 
-    .footer{
-      font-size: 9px;
-    }
-    #myBtn {
-      display: none; /* Hidden by default */
-      position: fixed; /* Fixed/sticky position */
-      bottom: 20px; /* Place the button at the bottom of the page */
-      right: 20px; /* Place the button 30px from the right */
-      z-index: 99; /* Make sure it does not overlap */
-      border: 2px solid #fad93a; /* Remove borders */
-      outline: none; /* Remove outline */
-      background-color: #393184; /* Set a background color */
-      cursor: pointer; /* Add a mouse pointer on hover */
-      padding: 10px 16px; /* Some padding */
-      border-radius: 50%; /* Rounded corners */
-      font-size: 20px; /* Increase font size */
-      font-weight: bold;
-      color: #fad93a;
-    }
+  .motoEng {
+    font-family: "Licorice", cursive;
+    font-size: 30px;
+  }
+
+  .motoHindi {
+    font-family: "Kalam", cursive;
+    font-size: 20px;
+  }
+
+  .motobyeng {
+    font-size: 20px;
+  }
+
+  .motobyhindi {
+    font-size: 15px;
+  }
+
+  .footer {
+    font-size: 9px;
+  }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid #fad93a; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #393184; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 16px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+    font-weight: bold;
+    color: #fad93a;
+  }
 }
-

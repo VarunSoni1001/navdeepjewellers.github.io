@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); */
 
 /* for unsplash images ==> https://source.unsplash.com/500x500/?type,type */
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Baskervville', serif;
+  font-family: "Baskervville", serif;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-tap-highlight-color: transparent !important;
   /* font-family: 'Dancing Script', cursive; */
 }
-*:focus{
+*:focus {
   outline: none !important;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 a {
@@ -35,64 +35,64 @@ li {
   list-style: none;
 }
 
-.background{
-  background-image: url('../img/bgImage4x3.png');
+.background {
+  background-image: url("../img/bgImage4x3.png");
   background-size: cover;
 }
 
-.background1{
+.background1 {
   background: #393184;
   background-size: cover;
   background-blend-mode: darken;
 }
 
-.profileImg{
+.profileImg {
   width: 15%;
   align-items: center;
   justify-content: center;
 }
 
-.motoEng{
-  font-family: 'Licorice', cursive;
+.motoEng {
+  font-family: "Licorice", cursive;
   font-size: 40px;
   color: #393184;
   /* font-weight: 600; */
 }
 
-.motoHindi{
-  font-family: 'Kalam', cursive;
+.motoHindi {
+  font-family: "Kalam", cursive;
   font-size: 35px;
   color: #393184;
   /* font-weight: 600; */
 }
 
-.motobyeng{
+.motobyeng {
   color: #393184;
   font-size: 30px;
   text-align: right;
-  font-family: 'Licorice', cursive;
+  font-family: "Licorice", cursive;
   /* font-weight: 600; */
 }
 
-.motobyhindi{
+.motobyhindi {
   color: #393184;
   font-size: 25px;
   text-align: right;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   /* font-weight: 600; */
 }
 
-.logo{
+.logo {
   width: 15%;
   margin: 15px;
 }
 
-.logo img{
+.logo img {
   padding-left: 30px;
   width: 85%;
 }
 
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,27 +106,27 @@ li {
   z-index: 5;
 }
 
-.phonelogo{
+.phonelogo {
   font-size: x-large;
 }
 
-.bluestoneLogo{
+.bluestoneLogo {
   width: 15%;
   align-items: center;
   justify-content: center;
 }
 
-.phonelogo img{
+.phonelogo img {
   width: 3%;
   font-size: x-large;
 }
 
-.downArrow{
+.downArrow {
   font-size: xx-large;
   text-align: center;
 }
 
-.nav-links a{
+.nav-links a {
   color: #fad93a;
 }
 
@@ -136,29 +136,29 @@ li {
   font-size: 18px;
   padding: 0px 30px;
   /* transition: ease; */
- }
- .menu li:hover {
+}
+.menu li:hover {
   background-color: #fada3a60;
   border-radius: 8px;
   transition: 0.4s ease-out;
- }
- .menu li {
+}
+.menu li {
   padding: 5px 14px;
- }
+}
 
-.firstSection{
+.firstSection {
   height: 160vh;
   align-items: center;
   justify-content: center;
 }
 
-.firstSection-index{
+.firstSection-index {
   height: 120vh;
   align-items: center;
   justify-content: center;
 }
 
-.box-main{
+.box-main {
   display: block;
   justify-content: center;
   align-items: center;
@@ -168,7 +168,7 @@ li {
   padding-block: 50px;
 }
 
-.box-main-index{
+.box-main-index {
   display: block;
   justify-content: center;
   align-items: center;
@@ -178,39 +178,39 @@ li {
   padding-block: 100px;
 }
 
-.quotationMarks-left{
+.quotationMarks-left {
   text-align: left;
   font-size: 100px;
   padding-left: 50px;
   color: #393184;
 }
 
-.quotationMarks-right{
+.quotationMarks-right {
   text-align: right;
   font-size: 100px;
   padding-right: 50px;
   color: #393184;
 }
 
-.hrDown-logo{
+.hrDown-logo {
   width: 25%;
 }
 
-.text-big{
+.text-big {
   font-size: 30px;
   text-align: center;
   font-weight: bolder;
-  font-family: 'Baskervville', serif;
+  font-family: "Baskervville", serif;
 }
 
-.text-small{
+.text-small {
   font-size: x-large;
   font-style: italic;
   text-align: center;
-  font-family: 'Baskervville', serif;
+  font-family: "Baskervville", serif;
 }
 
-.btn{
+.btn {
   padding: 8px 20px;
   margin: 10px 5px;
   border: 2px solid #fad93a;
@@ -219,67 +219,67 @@ li {
   background: none;
   color: #fad93a;
   cursor: pointer;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.btn-sm{
+.btn-sm {
   vertical-align: middle;
   padding: 5px 10px;
   background-color: rgba(0, 0, 0, 0.301);
 }
 
-.section{
+.section {
   max-width: 95%;
   margin: auto;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 50px;
   z-index: 1;
 }
 
-.section-P{
+.section-P {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   max-width: 80%;
   margin: auto;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 20px;
 }
 
-.paras{
+.paras {
   padding: 0 60px;
 }
 
-.section-left{
+.section-left {
   flex-direction: row-reverse;
 }
 
-.sectionTag{
+.sectionTag {
   padding: 16px 0;
   text-align: left;
 }
 
-.sectionSubTag{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.sectionSubTag {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.aboutus{
+.aboutus {
   text-align: center;
-  font-family: 'Baskervville', serif;
+  font-family: "Baskervville", serif;
   font-size: 20px;
   width: 90%;
   /* font-style: italic; */
   font-weight: 500;
 }
 
-.thumbnail img{
+.thumbnail img {
   width: 250px;
   border: 2px solid black;
   border-radius: 50px;
   margin-top: 20px;
 }
 
-.social-btn-logo{
+.social-btn-logo {
   width: 50px;
   align-items: center;
   justify-content: center;
@@ -289,45 +289,45 @@ li {
   border-radius: 20px;
 }
 
-.social-btn-logo:hover{
+.social-btn-logo:hover {
   transform: scale(1.1);
 }
 
-.buttons{
+.buttons {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.buttons a{
-  color: rgba(0, 0, 0, 0.800);
+.buttons a {
+  color: rgba(0, 0, 0, 0.8);
   padding: 5px;
 }
 
-.signup{
-  background: rgba(233, 210, 7, 0.2) url('../img/bgImageflip.png');
+.signup {
+  background: rgba(233, 210, 7, 0.2) url("../img/bgImageflip.png");
   height: 700px;
-  background-blend-mode: darken;  
+  background-blend-mode: darken;
   background-size: cover;
 }
 
-.text-center{
+.text-center {
   text-align: center;
   padding-top: 30px;
   font-size: x-large;
   color: #393184;
 }
 
-.signuplink{
+.signuplink {
   color: #fada3a;
 }
 
-.form{
+.form {
   max-width: 50%;
   margin: 50px auto;
 }
 
-.form-input{
+.form-input {
   margin: 30px 0px;
   padding: 10px 15px;
   width: 100%;
@@ -337,11 +337,11 @@ li {
   /* box-shadow: 5px 5px 10px #999; */
 }
 
-.btnSignUp{
+.btnSignUp {
   color: #fad93a;
   border: 2px solid #fad93a;
   background-color: #393184;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: medium;
   /* box-shadow: 5px 5px 10px #999; */
 }
@@ -353,7 +353,7 @@ li {
 }
 
 .btnSignUp span:after {
-  content: '\000BB';
+  content: "\000BB";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -378,7 +378,7 @@ li {
 }
 
 .AU span:after {
-  content: '\000BB';
+  content: "\000BB";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -403,7 +403,7 @@ li {
 }
 
 .OP span:after {
-  content: '\000BB';
+  content: "\000BB";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -428,7 +428,7 @@ li {
 }
 
 .CU span:after {
-  content: '\000BB';
+  content: "\000BB";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -445,48 +445,46 @@ li {
   right: 0;
 }
 
-
-
-.phone{
+.phone {
   text-align: center;
   font-size: large;
   font-weight: bold;
   color: black;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.phone a{
+.phone a {
   color: #393184bd;
 }
 
-hr{
+hr {
   width: 50%;
   align-items: center;
   justify-content: center;
 }
 
-.signup-hr{
+.signup-hr {
   width: 30%;
 }
 
-.homepage{
+.homepage {
   text-align: center;
 }
 
-.homepage-link{
+.homepage-link {
   text-decoration: underline;
 }
 
-.signuplink{
+.signuplink {
   text-decoration: underline;
 }
 
-.homepage a{
+.homepage a {
   text-decoration: underline;
   text-decoration-color: #393184;
 }
 
-.footer{
+.footer {
   text-align: center;
   background-color: #393184;
   color: #fad93a;
@@ -499,7 +497,7 @@ hr{
   box-shadow: 5px 5px 5px 10px #999;
 }
 
-.burger{
+.burger {
   display: none;
   position: absolute;
   cursor: pointer;
@@ -512,7 +510,9 @@ hr{
   border-radius: 5px;
 } */
 
-.line1 ,.line2 , .line3{
+.line1,
+.line2,
+.line3 {
   width: 25px;
   height: 3px;
   background-color: #fad93a;
@@ -530,7 +530,7 @@ hr{
   display: inline-block;
   overflow: hidden;
   letter-spacing: 1px;
-  animation: typing 4s steps(30, end), blink .8s step-end infinite;
+  animation: typing 4s steps(30, end), blink 0.8s step-end infinite;
   white-space: nowrap;
   font-weight: 100;
   /* font-size: 0px; */
@@ -540,24 +540,25 @@ hr{
 }
 
 @keyframes typing {
-  from { 
-      width: 0% 
+  from {
+    width: 0%;
   }
-  to { 
-      width: 100% 
+  to {
+    width: 100%;
   }
 }
 
 @keyframes blink {
-  from, to { 
-      border-color: transparent 
+  from,
+  to {
+    border-color: transparent;
   }
-  50% { 
-      border-color: #fada3a; 
+  50% {
+    border-color: #fada3a;
   }
 }
 
-#reviews{
+#reviews {
   border-radius: 2px 150px 150px 150px;
   border-left: 2px solid #393184;
   border-right: 10px solid #393184;
@@ -588,5 +589,3 @@ hr{
   background-color: #393184bd; /* Add a dark-grey background on hover */
   transition: 0.2s ease;
 }
-
-
