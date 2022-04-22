@@ -112,7 +112,7 @@ li {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0px 2px 10px 3px #999;
-  z-index: 5;
+  z-index: 999999999999;
 }
 
 .phonelogo {
