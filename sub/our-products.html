@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/burger.css">
     <link rel="icon" type="image/png" href="../img/onlylogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc4a102c1a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Products - Navdeep Jewellers Pvt. Ltd.</title>
 </head>
 <body>
@@ -139,6 +143,24 @@
   <footer class="footer">
     &copy; 2022 Navdeep Jewellers Private Limited. All right reserved.
   </footer>
+
+
+
+
+  <div class="loader-wrapper">
+    <span class="loader">
+      <span class="loader-inner">
+      </span>
+    </span>
+    <br><br>
+    <p style="font-family: 'Josefin Slab', serif; font-weight: bolder; font-size: xx-large; margin-left: 10px;color: #393184; text-shadow: 5px 6px 3px #fada3a;">Loading.....</p>
+  </div>
+  <script>
+    $(window).on("load", function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+
 
 
 <script src="../js/resp.js"></script>
