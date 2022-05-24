@@ -1,6 +1,7 @@
 input[type="checkbox"] {
   display: none;
 }
+
 .burger {
   display: none;
   font-size: 24px;
@@ -28,7 +29,8 @@ input[type="checkbox"] {
     display: inline-block;
     background: none;
   }
-  .menu li + li {
+
+  .menu li+li {
     margin-top: 12px;
     /* transition: 0.5s ease-out; */
     /* animation: 0 500ms ease-out; */
@@ -43,7 +45,7 @@ input[type="checkbox"] {
     font-size: smaller;
   }
 
-  input[type="checkbox"]:checked ~ .menu {
+  input[type="checkbox"]:checked~.menu {
     display: block;
   }
 
@@ -108,9 +110,11 @@ input[type="checkbox"] {
   .buttons {
     text-align: center;
   }
+
   .buttons p {
     font-size: small;
   }
+
   .aboutus {
     text-align: center;
     font-family: "Baskervville", serif;
@@ -156,6 +160,7 @@ input[type="checkbox"] {
     letter-spacing: -1px;
     font-size: medium;
   }
+
   .quotationMarks-left {
     text-align: left;
     font-size: 60px;
@@ -211,19 +216,32 @@ input[type="checkbox"] {
   .footer {
     font-size: 9px;
   }
+
   #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 20px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: 2px solid #fad93a; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #393184; /* Set a background color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px 16px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
-    font-size: 20px; /* Increase font size */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 20px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 2px solid #fad93a;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #393184;
+    /* Set a background color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 10px 16px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 20px;
+    /* Increase font size */
     font-weight: bold;
     color: #fad93a;
   }
