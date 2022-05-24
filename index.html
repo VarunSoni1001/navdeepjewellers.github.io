@@ -1,301 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="#fad93a"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#393184"
-    />
-    <link rel="canonical" href="https://navdeepjewellers.com" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="icon" type="image/png" href="img/onlylogo.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fad93a" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#393184" />
+  <link rel="canonical" href="https://navdeepjewellers.com" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="icon" type="image/png" href="img/onlylogo.png" />
 
-    <script
-      src="https://kit.fontawesome.com/dc4a102c1a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Navdeep Jewellers Pvt. Ltd.</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap" rel="stylesheet" />
 
-  <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fa-solid fa-angles-up"></i>
-    </button>
-    <nav class="navbar background1">
-      <div class="logo">
-        <a href="/"><img src="img/logonavdeep.png" alt="logo" /></a>
+  <script src="https://kit.fontawesome.com/dc4a102c1a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Navdeep Jewellers Pvt. Ltd.</title>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa-solid fa-angles-up"></i>
+  </button>
+  <nav class="navbar background1">
+    <div class="logo">
+      <a href="/"><img src="img/logonavdeep.png" alt="logo" /></a>
+    </div>
+
+    <ul class="nav-links">
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="burger" onclick="myFunction(this)">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </label>
+      <div class="menu">
+        <li class="AU">
+          <span><a href="https://navdeepjewellers.com/sub/about-us">About Us</a></span>
+        </li>
+        <li class="OP">
+          <span><a href="https://navdeepjewellers.com/sub/our-products">Our Products</a></span>
+        </li>
+        <li class="CU">
+          <span><a href="https://navdeepjewellers.com/sub/contact-us">Contact Us</a></span>
+        </li>
       </div>
+    </ul>
+  </nav>
+  <!-- <a id="about"></a> -->
+  <section class="background firstSection-index">
+    <div class="box-main-index">
+      <!-- <div class="firstHalf"> -->
+      <center>
+        <img src="img/onlylogo.png" alt="profile" class="profileImg" />
+      </center>
+      <br />
+      <center>
+        <hr class="hrDown-logo" />
+      </center>
+      <br />
+      <p class="text-big">Navdeep Jewellers Pvt. Ltd.</p>
+      <br />
+      <p class="text-big">नवदीप ज्वैलर्स प्रा&#9900; ली&#9900;</p>
+      <br />
 
-      <ul class="nav-links">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="burger" onclick="myFunction(this)">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </label>
-        <div class="menu">
-          <li class="AU">
-            <span
-              ><a href="https://navdeepjewellers.com/sub/about-us"
-                >About Us</a
-              ></span
-            >
-          </li>
-          <li class="OP">
-            <span
-              ><a href="https://navdeepjewellers.com/sub/our-products"
-                >Our Products</a
-              ></span
-            >
-          </li>
-          <li class="CU">
-            <span
-              ><a href="https://navdeepjewellers.com/sub/contact-us"
-                >Contact Us</a
-              ></span
-            >
-          </li>
-        </div>
-      </ul>
-    </nav>
-    <!-- <a id="about"></a> -->
-    <section class="background firstSection-index">
-      <div class="box-main-index">
-        <!-- <div class="firstHalf"> -->
-        <center>
-          <img src="img/onlylogo.png" alt="profile" class="profileImg" />
-        </center>
-        <br />
-        <center>
-          <hr class="hrDown-logo" />
-        </center>
-        <br />
-        <p class="text-big">Navdeep Jewellers Pvt. Ltd.</p>
-        <br />
-        <p class="text-big">नवदीप ज्वैलर्स प्रा&#9900; ली&#9900;</p>
-        <br />
-
-        <center>
-          <div class="typewriter">
-            <div class="typewriter-text">
-              <p class="text-small">
-                We are the first BIS certified hallmark jewellers of Rewari.
-              </p>
-              <p class="text-small">
-                हम रेवाड़ी के पहले बीआईएस प्रमाणित हॉलमार्क ज्वैलर्स हैं।
-              </p>
-            </div>
+      <center>
+        <div class="typewriter">
+          <div class="typewriter-text">
+            <p class="text-small">
+              We are the first BIS certified hallmark jewellers of Rewari.
+            </p>
+            <p class="text-small">
+              हम रेवाड़ी के पहले बीआईएस प्रमाणित हॉलमार्क ज्वैलर्स हैं।
+            </p>
           </div>
-        </center>
-        <br />
-        <center>
-          <hr class="hrDown-logo" />
-          <hr />
-          <hr class="hrDown-logo" />
-        </center>
-        <br />
-        <div class="buttons">
-          <p>Follow us here / हमें यहाँ फॉलो करें</p>
-          <br />
-          <a
-            href="https://www.facebook.com/navdeepjewellersoffical/"
-            title="Facebook"
-            ><i class="fa-brands fa-facebook fa-xl"></i
-          ></a>
-          <a
-            href="https://instagram.com/navdeep_jewells?utm_medium=copy_link"
-            title="Instagram"
-            ><i class="fa-brands fa-instagram fa-xl"></i
-          ></a>
-          <!-- <a href="https://www.ejohri.com/navdeep-jewellers" title="eJohri"><img width="25px" src="img/ejohri.webp" alt="ejohri"></a> -->
-          <a
-            href="https://www.youtube.com/channel/UChgRN5fepirH41vI1sUV7Wg"
-            title="YouTube"
-            ><i class="fa-brands fa-youtube fa-xl"></i
-          ></a>
-          <a
-            href="https://in.linkedin.com/in/navdeep-jewellers-b54b7850"
-            title="Linkedin"
-            ><i class="fa-brands fa-linkedin fa-xl"></i
-          ></a>
         </div>
-        <br />
-        <center>
-          <hr class="hrDown-logo" />
-        </center>
-        <br /><br />
-        <center>
-          <h5>
-            <p>
-              To receive exclusive offers & news
-              <a href="#sign-up" class="signuplink">sign up</a> now.
-            </p>
-          </h5>
-        </center>
-        <br />
-        <center>
-          <h5>
-            <p>
-              विशेष ऑफ़र और समाचार प्राप्त करने के लिए अभी
-              <a href="#sign-up" class="signuplink">साइन अप</a> करें।
-            </p>
-          </h5>
-        </center>
-      </div>
-    </section>
-    <!-- <a id="services"></a> -->
-    <br /><br /><br />
-    <p class="quotationMarks-left">
-      <i class="fa-solid fa-quote-left fa-xs"></i>
-    </p>
-    <br />
-    <section class="section" id="reviews">
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-00d338ea-8e2e-4ae4-9c6d-9b2cf5912eba"></div>
-    </section>
-    <br />
-    <p class="quotationMarks-right">
-      <i class="fa-solid fa-quote-right fa-xs"></i>
-    </p>
-
-    <p
-      class="text-center"
-      style="
-        text-shadow: 5px 5px 10px #fada3a9b;
-        text-decoration: underline #fada3a;
-      "
-      id="our-map-location"
-    >
-      Our Location
-    </p>
-    <br /><br />
-    <center>
-      <section class="map">
+      </center>
+      <br />
+      <center>
         <hr class="hrDown-logo" />
         <hr />
         <hr class="hrDown-logo" />
-        <br /><br /><br />
-        <div class="absolute inset-0 bg-gray-300">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781829.166681213!2d76.0265011242011!3d29.27836224454422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d5073c2ad1583%3A0x4973a602848384d9!2sNavdeep%20Jewellers%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1649582290326!5m2!1sen!2sin"
-            style="
+      </center>
+      <br />
+      <div class="buttons">
+        <p>Follow us here / हमें यहाँ फॉलो करें</p>
+        <br />
+        <a href="https://www.facebook.com/navdeepjewellersoffical/" title="Facebook"><i
+            class="fa-brands fa-facebook fa-xl"></i></a>
+        <a href="https://instagram.com/navdeep_jewells?utm_medium=copy_link" title="Instagram"><i
+            class="fa-brands fa-instagram fa-xl"></i></a>
+        <!-- <a href="https://www.ejohri.com/navdeep-jewellers" title="eJohri"><img width="25px" src="img/ejohri.webp" alt="ejohri"></a> -->
+        <a href="https://www.youtube.com/channel/UChgRN5fepirH41vI1sUV7Wg" title="YouTube"><i
+            class="fa-brands fa-youtube fa-xl"></i></a>
+        <a href="https://in.linkedin.com/in/navdeep-jewellers-b54b7850" title="Linkedin"><i
+            class="fa-brands fa-linkedin fa-xl"></i></a>
+      </div>
+      <br />
+      <center>
+        <hr class="hrDown-logo" />
+      </center>
+      <br /><br />
+      <center>
+        <h5>
+          <p>
+            To receive exclusive offers & news
+            <a href="#sign-up" class="signuplink">sign up</a> now.
+          </p>
+        </h5>
+      </center>
+      <br />
+      <center>
+        <h5>
+          <p>
+            विशेष ऑफ़र और समाचार प्राप्त करने के लिए अभी
+            <a href="#sign-up" class="signuplink">साइन अप</a> करें।
+          </p>
+        </h5>
+      </center>
+    </div>
+  </section>
+  <!-- <a id="services"></a> -->
+  <br /><br /><br />
+  <p class="quotationMarks-left">
+    <i class="fa-solid fa-quote-left fa-xs"></i>
+  </p>
+  <br />
+  <section class="section" id="reviews">
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-00d338ea-8e2e-4ae4-9c6d-9b2cf5912eba"></div>
+  </section>
+  <br />
+  <p class="quotationMarks-right">
+    <i class="fa-solid fa-quote-right fa-xs"></i>
+  </p>
+
+  <p class="text-center" style="
+        text-shadow: 5px 5px 10px #fada3a9b;
+        text-decoration: underline #fada3a;
+      " id="our-map-location">
+    Our Location
+  </p>
+  <br /><br />
+  <center>
+    <section class="map">
+      <hr class="hrDown-logo" />
+      <hr />
+      <hr class="hrDown-logo" />
+      <br /><br /><br />
+      <div class="absolute inset-0 bg-gray-300">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781829.166681213!2d76.0265011242011!3d29.27836224454422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d5073c2ad1583%3A0x4973a602848384d9!2sNavdeep%20Jewellers%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1649582290326!5m2!1sen!2sin"
+          style="
               border: 2px double #393184;
               box-shadow: 10px 5px 10px #fada3a;
               opacity: 0.8;
-            "
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            width="90%"
-            height="450px"
-          ></iframe>
-        </div>
-        <br /><br /><br />
-        <hr class="hrDown-logo" />
-        <hr />
-        <hr class="hrDown-logo" />
-      </section>
-    </center>
-
-    <a id="sign-up"></a>
-    <br /><br /><br />
-    <section class="signup">
-      <form action="https://formspree.io/f/xjvlwvye" method="POST">
-        <br />
-        <h2 class="text-center">
-          Sign up to receive exclusive offers and news<br /><br />
-          विशेष ऑफ़र और समाचार प्राप्त करने के लिए साइन अप करें
-        </h2>
-        <br /><br />
-        <center>
-          <hr class="hrDown-logo" />
-          <hr class="signup-hr" />
-        </center>
-        <div class="form">
-          <input
-            class="form-input"
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your full name / अपना पूरा नाम दर्ज करें"
-            required
-          />
-          <input
-            class="form-input"
-            type="tel"
-            name="phoneNumber"
-            id="phoneNumber"
-            maxlength="10"
-            pattern="[0-9]{10}"
-            placeholder="Enter your phone number / अपना फोन नंबर दर्ज करें"
-            required
-          />
-          <input
-            class="form-input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your E-mail / अपना ईमेल दर्ज करें"
-            required
-          />
-          <!-- <textarea class="form-input" name="message" id="message" cols="30" rows="7" placeholder="Elaborate your concern(Optional)"></textarea> -->
-          <center>
-            <button class="btn btnSignUp"><span>Submit / जमा करे</span></button>
-          </center>
-        </div>
-        <center>
-          <hr class="signup-hr" />
-          <hr class="hrDown-logo" />
-        </center>
-      </form>
+            " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="90%"
+          height="450px"></iframe>
+      </div>
+      <br /><br /><br />
+      <hr class="hrDown-logo" />
+      <hr />
+      <hr class="hrDown-logo" />
     </section>
+  </center>
 
-    <footer class="footer">
-      &copy; 2022 Navdeep Jewellers Private Limited. All right reserved.
-    </footer>
-
-    <div class="loader-wrapper">
-      <span class="loader">
-        <span class="loader-inner"> </span>
-      </span>
+  <a id="sign-up"></a>
+  <br /><br /><br />
+  <section class="signup">
+    <form action="https://formspree.io/f/xjvlwvye" method="POST">
+      <br />
+      <h2 class="text-center">
+        Sign up to receive exclusive offers and news<br /><br />
+        विशेष ऑफ़र और समाचार प्राप्त करने के लिए साइन अप करें
+      </h2>
       <br /><br />
-      <p
-        style="
+
+
+
+      
+    <center>
+      <h4 style="color: red;">(SIGN UP IS CURRENTLY DISABLED DUE TO SOME ISSUES)
+        <br>
+        Kindly Contact Us for offers and news.
+        <a href="https://navdeepjewellers.com/sub/contact-us">CLick here.</a>
+      </h4>
+    </center>
+<br><br>
+
+
+
+
+
+      <center>
+        <hr class="hrDown-logo" />
+        <hr class="signup-hr" />
+      </center>
+      <div class="form">
+        <input class="form-input" type="text" name="name" id="name"
+          placeholder="Enter your full name / अपना पूरा नाम दर्ज करें" required />
+        <input class="form-input" type="tel" name="phoneNumber" id="phoneNumber" maxlength="10" pattern="[0-9]{10}"
+          placeholder="Enter your phone number / अपना फोन नंबर दर्ज करें" required />
+        <input class="form-input" type="email" name="email" id="email"
+          placeholder="Enter your E-mail / अपना ईमेल दर्ज करें" required />
+        <!-- <textarea class="form-input" name="message" id="message" cols="30" rows="7" placeholder="Elaborate your concern(Optional)"></textarea> -->
+        <center>
+          <button disabled class="btn btnSignUp"><span>Submit / जमा करे</span></button>
+          <!--Form is currently disabled.-->
+        </center>
+      </div>
+      <center>
+        <hr class="signup-hr" />
+        <hr class="hrDown-logo" />
+      </center>
+    </form>
+  </section>
+
+  <footer class="footer">
+    &copy; 2022 Navdeep Jewellers Private Limited. All right reserved.
+  </footer>
+
+  <div class="loader-wrapper">
+    <span class="loader">
+      <span class="loader-inner"> </span>
+    </span>
+    <br /><br />
+    <p style="
           font-family: 'Josefin Slab', serif;
           font-weight: bolder;
           font-size: xx-large;
           margin-left: 10px;
           color: #393184;
           text-shadow: 5px 6px 3px #fada3a;
-        "
-      >
-        Loading.....
-      </p>
-    </div>
-    <script>
-      $(window).on("load", function () {
-        $(".loader-wrapper").fadeOut("slow");
-      });
-    </script>
+        ">
+      Loading.....
+    </p>
+  </div>
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
 
-    <script src="js/resp.js"></script>
-  </body>
+  <script src="js/resp.js"></script>
+</body>
+
 </html>
