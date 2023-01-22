@@ -114,7 +114,8 @@ li {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0px 2px 10px 3px #999;
-  z-index: 999999999999;
+  z-index: 999999999;
+  /* font-family: "Baskervville", serif; */
 }
 
 .phonelogo {
@@ -151,8 +152,8 @@ li {
 
 .menu li:hover {
   background-color: #fada3a60;
-  border-radius: 8px;
-  transition: 0.4s ease-out;
+  border-radius: 10px;
+  transition: 0.5s ease-out;
 }
 
 .menu li {
@@ -319,7 +320,7 @@ li {
 
 .signup {
   background: rgba(233, 210, 7, 0.2) url("../img/bgImageflip.png");
-  height: 700px;
+  height: 750px;
   background-blend-mode: darken;
   background-size: cover;
 }
@@ -348,6 +349,7 @@ li {
   border: 2px solid #393184;
   border-radius: 5px;
   /* box-shadow: 5px 5px 10px #999; */
+  cursor: not-allowed;
 }
 
 .btnSignUp {
@@ -357,10 +359,12 @@ li {
   font-family: "Ubuntu", sans-serif;
   font-size: medium;
   /* box-shadow: 5px 5px 10px #999; */
+    cursor: not-allowed;
 }
 
 .btnSignUp span {
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: not-allowed;
   display: inline-block;
   position: relative;
   transition: 0.5s;
