@@ -25,6 +25,15 @@ input[type="checkbox"] {
     /* animation: 0 500ms ease-out; */
   }
 
+
+  .g-recaptcha {
+    transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+  }
+
+
   .menu li:hover {
     display: inline-block;
     background: none;

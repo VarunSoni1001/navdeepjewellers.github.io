@@ -320,10 +320,11 @@ li {
 
 .signup {
   background: rgba(233, 210, 7, 0.2) url("../img/bgImageflip.png");
-  height: 750px;
+  height: 800px;
   background-blend-mode: darken;
   background-size: cover;
 }
+
 
 .text-center {
   text-align: center;
@@ -655,6 +656,7 @@ hr {
   background-color: #fad93a;
   animation: loader-inner 2s infinite ease-in;
 }
+
 
 
 
