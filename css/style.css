@@ -349,7 +349,7 @@ li {
   border: 2px solid #393184;
   border-radius: 5px;
   /* box-shadow: 5px 5px 10px #999; */
-  cursor: not-allowed;
+  /* cursor: not-allowed; */
 }
 
 .btnSignUp {
@@ -359,12 +359,12 @@ li {
   font-family: "Ubuntu", sans-serif;
   font-size: medium;
   /* box-shadow: 5px 5px 10px #999; */
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
 }
 
 .btnSignUp span {
-  /* cursor: pointer; */
-  cursor: not-allowed;
+  cursor: pointer;
+  /* cursor: not-allowed; */
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -655,6 +655,22 @@ hr {
   background-color: #fad93a;
   animation: loader-inner 2s infinite ease-in;
 }
+
+
+
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -78px 0 0 0 !important;
+  width: 302px !important;
+  height: 76px !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
+
+
+
 
 @keyframes loader {
   0% {
