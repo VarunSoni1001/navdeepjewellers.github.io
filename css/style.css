@@ -9,9 +9,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Baskervville", serif;
+  /* font-family: "Baskervville", serif; */
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
   -webkit-tap-highlight-color: transparent !important;
 }
 
@@ -246,6 +246,14 @@ li {
   max-width: 95%;
   margin: auto;
   font-family: "Ubuntu", sans-serif;
+  padding: 50px;
+  z-index: 1;
+}
+
+.section-review {
+  max-width: 95%;
+  margin: auto;
+  /* font-family: "Ubuntu", sans-serif; */
   padding: 50px;
   z-index: 1;
 }
@@ -594,11 +602,11 @@ hr {
   /* Hidden by default */
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 20px;
+  bottom: 4%;
   /* Place the button at the bottom of the page */
-  right: 30px;
+  right: 2%;
   /* Place the button 30px from the right */
-  z-index: 99;
+  z-index: 999;
   /* Make sure it does not overlap */
   border: 2px solid #fad93a;
   /* Remove borders */
@@ -621,9 +629,9 @@ hr {
 }
 
 #myBtn:hover {
-  background-color: #393184bd;
+  background-color: darkgrey;
   /* Add a dark-grey background on hover */
-  transition: 0.2s ease;
+  transition: 0.1s ease;
 }
 
 .loader-wrapper {
