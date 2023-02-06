@@ -382,7 +382,7 @@ li {
   font-family: "Ubuntu", sans-serif;
   font-size: medium;
   /* box-shadow: 5px 5px 10px #999; */
-    /* cursor: not-allowed; */
+  /* cursor: not-allowed; */
 }
 
 .btnSignUp span {
@@ -527,16 +527,27 @@ hr {
 
 .footer {
   text-align: center;
-  background-color: #393184;
+  background-color: #393184f0;
   color: #fad93a;
-  font-size: 10px;
+  font-size: 12px;
   padding: 5px;
   font-style: italic;
   border-top: 3px solid #fad93a;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  box-shadow: 5px 5px 5px 10px #999;
+  box-shadow: 0px 5px 5px 7px #999;
 }
+
+.footerLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.footer a{
+  color: #fad93a;
+}
+
+
 
 .burger {
   display: none;

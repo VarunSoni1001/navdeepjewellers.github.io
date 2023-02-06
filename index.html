@@ -7,15 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fad93a" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#393184" />
-  <link rel="canonical" href="https://navdeepjewellers.com/in/" />
   <link rel="canonical" href="https://navdeepjewellers.com" />
-  <link rel="home" href="navdeepjewellers.com/in/" />
-  <link rel="home" href="navdeepjewellers.com" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/burger.css" />
   <link rel="icon" type="image/png" href="img/onlylogo.png" />
-
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap" rel="stylesheet" />
@@ -94,9 +91,9 @@
       <div class="buttons">
         <p>Follow us here / हमें यहाँ फॉलो करें</p>
         <br />
-        <a href="https://api.whatsapp.com/send?phone=918607600200&text=Hi,%20I%20need%20more%20information." title="WhatsApp"><i
-            class="fa-brands fa-whatsapp fa-xl"></i></a>
-          <a href="https://instagram.com/navdeepjewellers" title="Instagram"><i
+        <a href="https://api.whatsapp.com/send?phone=918607600200&text=Hi,%20I%20need%20more%20information."
+          title="WhatsApp"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+        <a href="https://instagram.com/navdeepjewellers" title="Instagram"><i
             class="fa-brands fa-instagram fa-xl"></i></a>
         <a href="https://www.facebook.com/navdeepjewellersoffical" title="Facebook"><i
             class="fa-brands fa-facebook fa-xl"></i></a>
@@ -145,11 +142,11 @@
     <i class="fa-solid fa-quote-right fa-xs"></i>
   </p>
 
-<center>
-  <hr class="hrDown-logo" />
-      <hr />
-      <hr class="hrDown-logo" />
-</center>
+  <center>
+    <hr class="hrDown-logo" />
+    <hr />
+    <hr class="hrDown-logo" />
+  </center>
 
   <p class="text-center" style="
         text-shadow: 5px 5px 10px #fada3a9b;
@@ -160,7 +157,7 @@
   <br /><br />
   <center>
     <section class="map">
-      
+
       <br /><br />
       <div class="absolute inset-0 bg-gray-300">
         <iframe
@@ -190,7 +187,7 @@
       </h2>
       <br /><br />
 
-<!-- 
+      <!-- 
 
 
       <center>
@@ -209,7 +206,7 @@
         <hr class="hrDown-logo" />
         <hr class="signup-hr" />
       </center>
-      <div class="form">  
+      <div class="form">
         <input class="form-input" type="text" name="name" id="name"
           placeholder="Enter your full name / अपना पूरा नाम दर्ज करें" required />
         <input class="form-input" type="tel" name="phoneNumber" id="phoneNumber" maxlength="10" pattern="[0-9]{10}"
@@ -230,7 +227,7 @@
   </section>
 
   <footer class="footer">
-    &copy; 2023 Navdeep Jewellers Private Limited. All Rights Reserved.
+    &copy; 2023 <a href="/"> Navdeep Jewellers Private Limited.</a> All Rights Reserved.
   </footer>
 
   <div class="loader-wrapper">
@@ -254,21 +251,22 @@
       $(".loader-wrapper").fadeOut("slow");
     });
   </script>
- 
+
   <script src="js/resp.js"></script>
 
   <script>
 
-window.addEventListener('load', () => {
-  const $recaptcha = document.querySelector('#g-recaptcha-response');
-  if ($recaptcha) {
-    $recaptcha.setAttribute('required', 'required');
-  }
-})
+    window.addEventListener('load', () => {
+      const $recaptcha = document.querySelector('#g-recaptcha-response');
+      if ($recaptcha) {
+        $recaptcha.setAttribute('required', 'required');
+      }
+    })
 
   </script>
-  
-  
-  
+
+
+
 </body>
+
 </html>
