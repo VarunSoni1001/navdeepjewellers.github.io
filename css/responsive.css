@@ -12,17 +12,17 @@ input[type="checkbox"] {
   .menu {
     display: none;
     position: absolute;
-    /* background-color: #fad93a; */
+    /* background-color: #ffcc00; */
     right: 0;
     text-align: center;
-    padding: 45px 50px;
+    padding: 50px 50px;
     margin-top: 5%;
-    height: 200px;
+    height: 250px;
     font-size: medium;
-    border: 2px solid #fad93a;
+    border: 2px solid #ffcc00;
     border-radius: 30px;
     background: #393184b0;
-    /* animation: 0 500ms ease-out; */
+    /* animation: 500ms ease-out; */
   }
 
 
@@ -47,7 +47,7 @@ input[type="checkbox"] {
 
   .signup {
     background: #fada3a60 url("../img/bgImageflip4x3.png");
-    background-size: cover;
+    background-size: auto;
   }
 
   .btnSignUp {
@@ -59,7 +59,8 @@ input[type="checkbox"] {
   }
 
   .firstSection {
-    height: 180vh;
+    /* height: 180vh; */
+    height: auto;
   }
 
   .logo img {
@@ -133,6 +134,20 @@ input[type="checkbox"] {
     font-weight: 400;
   }
 
+  .faq {
+    text-align: center;
+    margin-left: 10%;
+    font-family: "Baskervville", serif;
+    font-size: 14px;
+    width: 80%;
+    /* font-style: italic; */
+    font-weight: 400;
+  }
+
+  .faq-q{
+    font-weight: bold;
+  }
+  
   .paras {
     padding: 0px;
   }
@@ -184,7 +199,10 @@ input[type="checkbox"] {
   }
 
   .text-center {
+    /* text-align: center; */
     font-size: medium;
+    width: 80%;
+    margin-left: 10%;
   }
 
   #reviews {
@@ -238,7 +256,7 @@ input[type="checkbox"] {
     /* Place the button 30px from the right */
     z-index: 99;
     /* Make sure it does not overlap */
-    border: 2px solid #fad93a;
+    border: 2px solid #ffcc00;
     /* Remove borders */
     outline: none;
     /* Remove outline */
@@ -253,6 +271,6 @@ input[type="checkbox"] {
     font-size: 20px;
     /* Increase font size */
     font-weight: bold;
-    color: #fad93a;
+    color: #ffcc00;
   }
 }
