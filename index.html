@@ -20,7 +20,9 @@
   <script src="https://kit.fontawesome.com/dc4a102c1a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <title>Home - Navdeep Jewellers Private Limited</title>
+
 </head>
 
 <body>
@@ -211,11 +213,12 @@
       </center>
       <div class="form">
         <input class="form-input" type="text" name="name" id="name"
-          placeholder="Enter your full name / अपना पूरा नाम दर्ज करें" required />
+          placeholder="your full name" required />
         <input class="form-input" type="tel" name="phoneNumber" id="phoneNumber" maxlength="10" pattern="[0-9]{10}"
-          placeholder="Enter your phone number / अपना फोन नंबर दर्ज करें" required />
+          placeholder="your 10 digit phone number" required />
         <input class="form-input" type="email" name="email" id="email"
-          placeholder="Enter your E-mail / अपना ईमेल दर्ज करें" required />
+          placeholder="your@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+        <input type="text" name="_gotcha" style="display:none" />
         <!-- <textarea class="form-input" name="message" id="message" cols="30" rows="7" placeholder="Elaborate your concern(Optional)"></textarea> -->
         <center>
           <div class="g-recaptcha" data-sitekey="6LcM7V8kAAAAAEvSRFZoV9kAH1NZHQYk3bEzWvyB" data-theme="light"></div>
@@ -269,6 +272,7 @@
     })
 
   </script>
+
 
 
 
