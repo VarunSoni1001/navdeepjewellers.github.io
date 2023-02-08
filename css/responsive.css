@@ -61,7 +61,7 @@ input[type="checkbox"] {
   }
 
   .signup {
-    background: #fada3a60 url("../img/bgImageflip4x3.png");
+    background: rgba(205, 190, 56, 0.212) url("../img/bgImageflip4x3.png");
     background-size: auto;
   }
 

@@ -389,9 +389,9 @@ li {
 }
 
 .signup {
-  background: rgba(233, 210, 7, 0.2) url("../img/bgImageflip.png");
+  background: rgba(205, 190, 56, 0.212) url("../img/bgImageflip.png");
   height: auto;
-  background-blend-mode: darken;
+  background-blend-mode: soft-light;
   background-size: cover;
 }
 
