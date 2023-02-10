@@ -25,7 +25,7 @@ input[type="checkbox"] {
   }
 
     .menu, .menu li{
-    animation: nav-menu-open 0.5s forwards;
+    animation: nav-menu-open 0.4s forwards;
   }
 
 
@@ -33,11 +33,9 @@ input[type="checkbox"] {
   @keyframes nav-menu-open {
     from{
       top: -50%;
-      right: -50%;
     }
     to{
       top: 50%;
-      right: 0%;
     }
   }
 
