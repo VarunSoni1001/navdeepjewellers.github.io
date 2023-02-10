@@ -1,6 +1,6 @@
 # ErrorDocument 500 "Houston, we have a problem."
-# ErrorDocument 401 http://error.example.com/mordor.html
-ErrorDocument 404 /pages/404error.html
+ErrorDocument 404 https://navdeepjewellers.com/pages/contact-us/404error
+# ErrorDocument 404 /pages/404error.html
 
 IndexIgnore *
 
