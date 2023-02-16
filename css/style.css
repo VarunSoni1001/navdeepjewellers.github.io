@@ -30,18 +30,30 @@
   background: #ffcc00;
 }
 
-
-/* *::-webkit-scrollbar,
-*::-webkit-scrollbar-thumb {
-  width: 26px;
-  border-radius: 13px;
-  background-clip: padding-box;
-  border: 10px solid transparent;
+input::placeholder{
+  color: #393184;
 }
 
-*::-webkit-scrollbar-thumb {        
-  box-shadow: inset 0 0 0 10px;
-} */
+
+
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  /* background-color: hsl(19, 8%, 75%); */
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: hsl(19, 8%, 80%);
+  border: 2px solid white;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(19, 8%, 60%);
+}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -106,6 +118,8 @@ li {
   /* font-weight: 600; */
 }
 
+
+
 .logo {
   width: 15%;
   margin: 15px;
@@ -126,7 +140,7 @@ li {
   border-bottom: 5px solid #ffcc00;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 0px 2px 10px 3px #999;
+  box-shadow: 0 2px 10px 3px hsla(46, 68%, 32%, 0.5);
   z-index: 999999999;
   /* font-family: "Baskervville", serif; */
 }
@@ -164,9 +178,10 @@ li {
 }
 
 .menu li:hover {
-  background-color: #fada3a60;
+  /* background-color: #fada3a60; */
+  background-color: hsla(46, 68%, 32%, 0.372);
   border-radius: 10px;
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .menu li {
@@ -616,7 +631,7 @@ hr {
   border-top: 3px solid #ffcc00;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  box-shadow: 0px 5px 5px 7px #999;
+  box-shadow: 0px 5px 5px 7px hsla(46, 68%, 32%, 0.5);
 }
 
 .footer-ty {
@@ -667,11 +682,11 @@ hr {
 .line1,
 .line2,
 .line3 {
-  width: 25px;
+  width: 24px;
   height: 3px;
   background-color: #ffcc00;
   margin: 5px 5px;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .typewriter {
@@ -753,12 +768,12 @@ hr {
   /* Increase font size */
   font-weight: bold;
   color: #ffcc00;
+  box-shadow: 0 2px 3px 2px hsla(46, 68%, 32%, 0.336);
 }
 
 #myBtn:hover {
-  background-color: darkgrey;
-  /* Add a dark-grey background on hover */
-  transition: 0.1s ease;
+  transition: .5s ease;
+  box-shadow: 2px 2px 2px hsla(46, 68%, 32%, 0.5);
 }
 
 .loader-wrapper {
