@@ -1,6 +1,4 @@
-# ErrorDocument 500 "Houston, we have a problem."
 ErrorDocument 404 https://navdeepjewellers.com/pages/contact-us/404error
-# ErrorDocument 404 /404.html
 
 IndexIgnore *
 
