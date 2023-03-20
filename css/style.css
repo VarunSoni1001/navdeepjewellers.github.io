@@ -184,10 +184,6 @@ li {
   transition: 0.3s ease-out;
 }
 
-.menu li:active{
-  background-color: #ffeca0;
-  color: #393184;
-}
 
 .menu li {
   padding: 5px 14px;
