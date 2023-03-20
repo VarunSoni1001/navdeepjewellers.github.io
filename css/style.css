@@ -774,7 +774,7 @@ hr {
   /* Increase font size */
   font-weight: bold;
   color: #ffcc00;
-  box-shadow: 0 2px 3px 2px hsla(46, 68%, 32%, 0.336);
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.15);
 }
 
 #myBtn:hover {
