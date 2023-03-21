@@ -25,8 +25,9 @@ input[type="checkbox"] {
   }
 
     .menu, .menu li{
-    animation: nav-menu-open 0.4s forwards;
+    animation: nav-menu-open 0.8s forwards;
   }
+
 
 
 
@@ -71,6 +72,7 @@ input[type="checkbox"] {
     display: block;
     /* transition: 0.5s; */
   }
+
 
   .firstSection {
     /* height: 180vh; */
@@ -289,7 +291,7 @@ input[type="checkbox"] {
     /* Set a background color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
-    padding: 13px 20px;
+    padding: 13px 18px;
     /* Some padding */
     border-radius: 50%;
     /* Rounded corners */

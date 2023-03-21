@@ -75,7 +75,7 @@ li {
 }
 
 .background {
-  background-image: url("../img/bgImageflip.png");
+  background-image: url("../img/bgImage4x3.png");
   background-size: cover;
 }
 
@@ -181,6 +181,7 @@ li {
   color: #ffcc00;
 }
 
+
 .menu {
   display: flex;
   gap: 1.5em;
@@ -189,17 +190,50 @@ li {
   /* transition: ease; */
 }
 
-.menu li:hover {
-  /* background-color: #fada3a60; */
-  background-color: hsla(46, 68%, 32%, 0.372);
-  border-radius: 10px;
-  transition: 0.3s ease-out;
-}
-
-
-.menu li {
+.menu li{
   padding: 5px 14px;
+  border-radius: 10px;
 }
+
+
+
+/* For underline animation in navbar links */
+
+/* .menu li{
+  display: flex;
+  position: relative;
+  color: #ffcc00;
+  padding: 5px 14px;
+  border-radius: 10px;
+}
+
+.menu li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: #ffcc00;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.menu li:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+
+/* End */
+
+
+
+
+
+
+
 
 .firstSection {
   /* height: 160vh; */
@@ -210,7 +244,7 @@ li {
 
 .firstSection-ty {
   /* height: 160vh; */
-  background-image: url("../img/bgImageflip.png");
+  background-image: url("../img/bgImage4x3.png");
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -417,7 +451,7 @@ li {
 }
 
 .signup {
-  background: rgba(205, 190, 56, 0.250) url("../img/bgImage.png");
+  background: rgba(205, 190, 56, 0.250) url("../img/bgImageflip.png");
   height: auto;
   background-blend-mode: soft-light;
   background-size: cover;
@@ -471,7 +505,7 @@ li {
   /* cursor: not-allowed; */
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .btnSignUp span:after {
@@ -480,7 +514,7 @@ li {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .btnSignUp:hover span {
@@ -492,11 +526,103 @@ li {
   right: 0;
 }
 
+
+
+
+
+.AU span::before{
+  content: "\00AB";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.4s;
+}
+.AU:hover span{
+  padding-left: 25px;
+}
+
+.AU:hover span::before{
+  opacity: 1;
+  left: 0;
+}
+
+
+
+
+
+
+.OP span::before{
+  content: "\00AB";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.4s;
+}
+.OP:hover span{
+  padding-left: 25px;
+}
+
+.OP:hover span::before{
+  opacity: 1;
+  left: 0;
+}
+
+
+
+
+
+
+.CU span::before{
+  content: "\00AB";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.4s;
+}
+.CU:hover span{
+  padding-left: 25px;
+}
+
+.CU:hover span::before{
+  opacity: 1;
+  left: 0;
+}
+
+
+
+
+
+.FAQ span::before{
+  content: "\00AB";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.4s;
+}
+.FAQ:hover span{
+  padding-left: 25px;
+}
+
+.FAQ:hover span::before{
+  opacity: 1;
+  left: 0;
+}
+
+
+
+
+
+
+
 .AU span {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .AU span:after {
@@ -505,8 +631,10 @@ li {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
+
+
 
 .AU:hover span {
   padding-right: 25px;
@@ -521,7 +649,7 @@ li {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .OP span:after {
@@ -530,7 +658,7 @@ li {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .OP:hover span {
@@ -546,7 +674,7 @@ li {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .CU span:after {
@@ -555,7 +683,7 @@ li {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .CU:hover span {
@@ -573,7 +701,7 @@ li {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .FAQ span:after {
@@ -582,7 +710,7 @@ li {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .FAQ:hover span {
@@ -778,7 +906,7 @@ hr {
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
-  padding: 15px 25px;
+  padding: 15px 22px;
   /* Some padding */
   border-radius: 50%;
   /* Rounded corners */
