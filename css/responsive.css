@@ -289,11 +289,11 @@ input[type="checkbox"] {
     /* Set a background color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
-    padding: 10px 16px;
+    padding: 13px 20px;
     /* Some padding */
     border-radius: 50%;
     /* Rounded corners */
-    font-size: 20px;
+    font-size: 16px;
     /* Increase font size */
     font-weight: bold;
     color: #ffcc00;
