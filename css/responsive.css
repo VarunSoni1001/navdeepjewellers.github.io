@@ -73,6 +73,9 @@ input[type="checkbox"] {
     /* transition: 0.5s; */
   }
 
+  .click{
+    right: 41.5%;
+  }
 
   .firstSection {
     /* height: 180vh; */
