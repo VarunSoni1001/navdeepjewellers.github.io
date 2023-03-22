@@ -1,4 +1,4 @@
-ErrorDocument 404 https://navdeepjewellers.com/pages/contact-us/404error
+ErrorDocument 404 https://navdeepjewellers.com/404
 
 IndexIgnore *
 
