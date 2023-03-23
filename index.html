@@ -237,11 +237,11 @@
         <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
 
 
-        <p style="font-weight: 500;">Full Name :</p><input class="form-input" type="text" name="Name" id="name"
+        <label for="name"></label><p style="font-weight: 500;">Full Name :</p><input class="form-input" type="text" name="name" id="name"
           placeholder="Ajay Kumar" maxlength="25" required />
-        <p style="font-weight: 500;">Phone Number :</p><input class="form-input" type="tel" name="Phone&nbsp;Number"
-          id="phoneNumber" maxlength="10" pattern="[0-9]{10}" placeholder="xxxxxxxxxx" required />
-        <p style="font-weight: 500;">Email :</p><input class="form-input" type="email" name="E-mail&nbsp;ID" id="email"
+        <label for="phone"></label><p style="font-weight: 500;">Phone Number :</p><input class="form-input" type="tel" name="phone"
+          id="phone" maxlength="10" pattern="[0-9]{10}" placeholder="xxxxxxxxxx" required />
+        <label for="email"></label><p style="font-weight: 500;">Email :</p><input class="form-input" type="email" name="email" id="email"
           placeholder="your@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
 
 
@@ -366,9 +366,9 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
     function getFormData() {
       const form = document.querySelector('#hidden_action_form');
       const formData = new FormData(form);
-      const name = formData.get('Name');
-      const email = formData.get('E-mail ID');
-      const phone = formData.get('Phone Number');
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
       localStorage.setItem('form-data', JSON.stringify({ name, email, phone }));
     }
   </script>
