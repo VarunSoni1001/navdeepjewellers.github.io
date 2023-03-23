@@ -201,7 +201,7 @@
   <a id="sign-up"></a>
   <br /><br /><br />
   <section class="signup">
-    <form id="hidden_action_form" action="https://navdeepjewellers.com/contact/signup/thanks_for_signing.html?redirect=1" method="POST">
+    <form id="hidden_action_form" method="POST" onsubmit="getFormData()">
       <br />
       <h2 class="text-center">
         Sign up/Contact Us to receive exclusive offers and news<br /><br />
@@ -232,7 +232,7 @@
 
 
         <input type="text" name="_honey" style="display:none;">
-        <input type="hidden" name="_next" value="https://navdeepjewellers.com/contact/signup/thanks_for_signing.html?redirect=1">
+        <input type="hidden" name="_next" value="https://navdeepjewellers.com/contact/signup/thanks_for_signing">
         <input type="hidden" name="_subject" value="New form submission on navdeepjewellers.com">
         <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
 
@@ -361,6 +361,17 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
 
 
 
+
+  <script>
+    function getFormData() {
+      const form = document.querySelector('#hidden_action_form');
+      const formData = new FormData(form);
+      const name = formData.get('Name');
+      const email = formData.get('E-mail ID');
+      const phone = formData.get('Phone Number');
+      localStorage.setItem('form-data', JSON.stringify({ name, email, phone }));
+    }
+  </script>
 
 
 
