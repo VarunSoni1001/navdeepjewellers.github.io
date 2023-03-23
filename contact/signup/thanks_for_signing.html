@@ -9,7 +9,7 @@
 
 
     <!-- redirect in 15 secons -->
-    <meta http-equiv="refresh" content="15; url=/">
+    <meta http-equiv="refresh" content="20; url=/">
     <!-- redit=rection ends -->
 
 
@@ -21,11 +21,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/img/onlylogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc4a102c1a.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-      
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            const formData = JSON.parse(localStorage.getItem("dataOfForm"));
+            if (formData) {
+                const name = formData.name;
+                const email = formData.email;
+                const phone = formData.phone;
+                document.getElementById('Name').textContent = name;
+                document.getElementById('Email').textContent = email;
+                document.getElementById('Phone').textContent = phone;
+                localStorage.removeItem("dataOfForm");
+            }
+        });
+
+    </script>
 
     <title>Thank you for signing in</title>
 </head>
@@ -65,9 +82,7 @@
                 <hr class="hrDown-logo">
             </center>
             <br><br>
-            <p class="text-big">Navdeep Jewellers Pvt. Ltd.</p><br>
-            <p class="text-big">नवदीप ज्वैलर्स प्रा&#9900; ली&#9900;</p>
-            <br><br>
+            <p class="text-big">Navdeep Jewellers Pvt. Ltd.</p><br><br>
             <center>
                 <hr class="hrDown-logo">
                 <hr>
@@ -76,25 +91,28 @@
             <center>
 
 
-                <script>
-                    const formData = JSON.parse(localStorage.getItem('form-data'));
-                    const name = formData.name;
-                    const email = formData.email;
-                    const phone = formData.phone;
-                    document.querySelector('#name').textContent = name;
-                    document.querySelector('#email').textContent = email;
-                    document.querySelector('#phone').textContent = phone;
-                  </script>
+
 
 
                 <section class="aboutus"><br>
-                    <h1 style="font-size: 26px; font-weight: bolder; font-family: 'Fira Code', monospace;">Thank You<br>Your form is submitted.<br>
-                    <h5 style="font-family: 'Fira Code', monospace;">Details =></h5>
+                    <h1 style="font-size: 30px; font-weight: bolder;">Thank
+                        You<br>Your form is submitted.<br><br>
+                        <h4 style="font-family: 'Fira Code', monospace;">Details were =></h4>
                     </h1>
 
-                    <p>Name: <span id="name"></span></p>
-                    <p>Phone Number: <span id="phone"></span></p>
-                    <p>Email: <span id="email"></span></p>
+                    <b>
+                        <div class="dataOfForm" style="font-family: 'Poppins', sans-serif;">
+                        <p>Name:
+                    </b><span id="Name"></span></p>
+
+                    <b>
+                        <p>Phone Number:
+                    </b><span id="Phone"></span></p>
+
+                    <b>
+                        <p>Email:
+                    </b><span id="Email"></span></p>
+                </div>
                     <br>
                     <div class="redirect" id="countdown"></div>
                     <center>
@@ -112,7 +130,7 @@
 
     <!-- redirecting countdown timer -->
     <script>
-        var timeleft = 14;
+        var timeleft = 19;
         var downloadTimer = setInterval(function () {
             if (timeleft <= 0) {
                 clearInterval(downloadTimer);

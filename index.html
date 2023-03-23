@@ -285,14 +285,14 @@
       acceptBtn = cookieBox.querySelector("button");
     acceptBtn.onclick = () => {
       //setting cookie for 1 month, after one month it'll be expired automatically
-      document.cookie = "CookieBy=NavdeepJewellersPrivateLimited; max-age=" + 60 * 60 * 24 * 30;
+      document.cookie = "CookieBy=_ndjpl; max-age=" + 60 * 60 * 24 * 30;
       if (document.cookie) { //if cookie is set
         cookieBox.classList.add("hide"); //hide cookie box
       } else { //if cookie not set then alert an error
         alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
       }
     }
-    let checkCookie = document.cookie.indexOf("CookieBy=NavdeepJewellersPrivateLimited"); //checking our cookie
+    let checkCookie = document.cookie.indexOf("CookieBy=_ndjpl"); //checking our cookie
     //if cookie is set then hide the cookie box else show it
     checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
   </script>
@@ -369,7 +369,7 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
       const name = formData.get('name');
       const email = formData.get('email');
       const phone = formData.get('phone');
-      localStorage.setItem('form-data', JSON.stringify({ name, email, phone }));
+      localStorage.setItem('dataOfForm', JSON.stringify({ name, email, phone }));
     }
   </script>
 

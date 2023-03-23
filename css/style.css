@@ -1007,6 +1007,13 @@ hr {
 
 
 
+.dataOfForm span{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #231b66;
+}
+
+
+
 
 #g-recaptcha-response {
   display: block !important;
