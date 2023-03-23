@@ -47,7 +47,7 @@
         <div class="line3"></div>
       </label>
       <div class="menu">
-        
+
         <li class="AU">
           <span>
             <a href="https://navdeepjewellers.com/about">About Us</a>
@@ -112,7 +112,8 @@
       <div class="buttons">
         <p>Follow us here / हमें यहाँ फॉलो करें</p>
         <br />
-        <a id="whatsapp" href="https://api.whatsapp.com/send?phone=918607600200&text=Hi,%20I%20need%20more%20information."
+        <a id="whatsapp"
+          href="https://api.whatsapp.com/send?phone=918607600200&text=Hi,%20I%20need%20more%20information."
           title="WhatsApp"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
         <a id="instagram" href="https://instagram.com/navdeepjewellers" title="Instagram"><i
             class="fa-brands fa-instagram fa-xl"></i></a>
@@ -200,7 +201,7 @@
   <a id="sign-up"></a>
   <br /><br /><br />
   <section class="signup">
-    <form id="hidden_action_form" method="POST">
+    <form id="hidden_action_form" action="https://navdeepjewellers.com/contact/signup/thanks_for_signing.html?redirect=1" method="POST">
       <br />
       <h2 class="text-center">
         Sign up/Contact Us to receive exclusive offers and news<br /><br />
@@ -231,8 +232,7 @@
 
 
         <input type="text" name="_honey" style="display:none;">
-        <input type="hidden" name="_next"
-          value="https://navdeepjewellers.com/contact/signup/thanks_for_signing">
+        <input type="hidden" name="_next" value="https://navdeepjewellers.com/contact/signup/thanks_for_signing.html?redirect=1">
         <input type="hidden" name="_subject" value="New form submission on navdeepjewellers.com">
         <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
 
@@ -265,39 +265,39 @@
 
 
 
-<!-- Cookies Consent Block start -->
+  <!-- Cookies Consent Block start -->
 
 
 
-<div class="cookie-consent">
-  <img src="img/cookie_img.png" alt="Cookie">
-  <div class="consent">
-    <header>Cookies Policy</header>
-    <p>This website use cookies to ensure you get the best experience.</p>
-    <div class="cookie-consent-buttons">
-      <button class="item"><span>Got it</span></button>
-      <!-- <a href="#" class="item">Learn more</a> -->
+  <div class="cookie-consent">
+    <img src="img/cookie_img.png" alt="Cookie">
+    <div class="consent">
+      <header>Cookies Policy</header>
+      <p>This website use cookies to ensure you get the best experience.</p>
+      <div class="cookie-consent-buttons">
+        <button class="item"><span>Got it</span></button>
+        <!-- <a href="#" class="item">Learn more</a> -->
+      </div>
     </div>
   </div>
-</div>
-<script>
-  const cookieBox = document.querySelector(".cookie-consent"),
-  acceptBtn = cookieBox.querySelector("button");
-  acceptBtn.onclick = ()=>{
-    //setting cookie for 1 month, after one month it'll be expired automatically
-    document.cookie = "CookieBy=NavdeepJewellersPrivateLimited; max-age="+60*60*24*30;
-    if(document.cookie){ //if cookie is set
-      cookieBox.classList.add("hide"); //hide cookie box
-    }else{ //if cookie not set then alert an error
-      alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+  <script>
+    const cookieBox = document.querySelector(".cookie-consent"),
+      acceptBtn = cookieBox.querySelector("button");
+    acceptBtn.onclick = () => {
+      //setting cookie for 1 month, after one month it'll be expired automatically
+      document.cookie = "CookieBy=NavdeepJewellersPrivateLimited; max-age=" + 60 * 60 * 24 * 30;
+      if (document.cookie) { //if cookie is set
+        cookieBox.classList.add("hide"); //hide cookie box
+      } else { //if cookie not set then alert an error
+        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+      }
     }
-  }
-  let checkCookie = document.cookie.indexOf("CookieBy=NavdeepJewellersPrivateLimited"); //checking our cookie
-  //if cookie is set then hide the cookie box else show it
-  checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-</script>
+    let checkCookie = document.cookie.indexOf("CookieBy=NavdeepJewellersPrivateLimited"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+  </script>
 
-<!-- <script>
+  <!-- <script>
   // Set a same-site cookie for first-party contexts
 document.cookie = 'cookie1=value1; SameSite=Lax';
 // Set a cross-site cookie for third-party contexts
@@ -307,7 +307,7 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
 
 
 
-<!-- Cookies Consent Block end -->
+  <!-- Cookies Consent Block end -->
 
 
 
@@ -343,7 +343,7 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
     });
   </script>
 
-  
+
 
   <script src="contact/signup/s.js"></script>
   <script src="js/app.js"></script>
@@ -358,13 +358,13 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
     })
 
   </script> -->
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
 
 </body>
 
