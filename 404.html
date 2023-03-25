@@ -39,7 +39,7 @@
   </button>
   <nav class="navbar background1" id="navBar">
     <div class="logo">
-      <a href="/"><img src="img/logonavdeep.png" alt="logo" /></a>
+      <a href="/"><img src="https://navdeepjewellers.com/img/logonavdeep.png" alt="logo" /></a>
     </div>
 
     <ul class="nav-links">
@@ -69,15 +69,17 @@
 
 
   <h1 class="firstSection-index box-main-ty background"><br>
-    <center><img src="/img/onlylogo.png" alt="profile" class="profileImg-ty"></center>
+    <center><img src="https://navdeepjewellers.com/img/onlylogo.png" alt="profile" class="profileImg-ty"></center>
     <center>404 ERROR - PAGE NOT FOUND
       <p class="redirect">The page you were looking for doesn't exist. Please check the URL and try again.
-       <br> URL: <code id="getErrorUrl"></code></p>
+        <br> URL: <code id="getErrorUrl"></code>
+      </p>
       <h6><br>
         <div class="redirect" id="countdown"></div>
         <center>
-        If not redirected,<br><span class="click"><a class="clickHere" href="/">click here</a></span>
-        <br></center>
+          If not redirected,<br><span class="click"><a class="clickHere" href="/">click here</a></span>
+          <br>
+        </center>
 
       </h6>
     </center>
@@ -92,7 +94,7 @@
   </script>
 
 
-<!-- redirecting countdown timer -->
+  <!-- redirecting countdown timer -->
   <script>
     var timeleft = 14;
     var downloadTimer = setInterval(function () {
@@ -100,7 +102,7 @@
         clearInterval(downloadTimer);
         document.getElementById("countdown").innerHTML = "Redirecting...";
       }
-      else if(timeleft==1){
+      else if (timeleft == 1) {
         document.getElementById("countdown").innerHTML = "or else, You will be automatically redirected to home page in " + timeleft + " second";
       }
       else {
@@ -109,7 +111,7 @@
       timeleft -= 1;
     }, 1000);
   </script>
-<!-- end of countdown timer -->
+  <!-- end of countdown timer -->
 
 
 
