@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/css/responsive.css">
   <link rel="stylesheet" href="/css/burger.css">
   <link rel="icon" type="image/png" href="img/onlylogo.png">
-  <link rel="apple-touch-icon" href="img/onlylogo.png"/>
+  <link rel="apple-touch-icon" href="img/onlylogo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
         <div class="line3"></div>
       </label>
       <div class="menu">
-        
+
         <li class="AU"><span><a href="https://navdeepjewellers.com/about">About Us</a></span></li>
         <li class="OP"><span><a href="https://navdeepjewellers.com/products">Our Products</a></span></li>
         <li class="CU"><span><a href="https://navdeepjewellers.com/contact">Contact Us</a></span></li>
@@ -70,7 +70,44 @@
     </div>
   </section>
 
-  <section class="section-P section-left">
+
+
+
+  <div id="coming-soon-sections-container"></div>
+
+
+
+
+
+  <!-- <section class="section-P section-left" id="coming-soon-section-1">
+    <div class="paras">
+      <p class="sectionTag text-big"></p>
+      <p class="sectionSubTag text-small"></p>
+    </div>
+    <div class="thumbnail">
+      <img src="" alt="thumbnail image" class="imgFluid">
+    </div>
+  </section>
+
+  <section class="section-P section-right" id="coming-soon-section-2">
+    <div class="paras">
+      <p class="sectionTag text-big"></p>
+      <p class="sectionSubTag text-small"></p>
+    </div>
+    <div class="thumbnail">
+      <img src="" alt="thumbnail image" class="imgFluid">
+    </div>
+  </section> -->
+
+
+
+
+
+
+
+
+
+  <!-- <section class="section-P section-left">
     <div class="paras">
       <p class="sectionTag text-big">COMING SOON VERY SOON</p>
       <p class="sectionSubTag text-small">
@@ -155,7 +192,12 @@
     <div class="thumbnail">
       <img src="/img/comingsoon.jpg" alt="image3" class="imgFluid">
     </div>
-  </section>
+  </section> -->
+
+
+
+
+
 
   <br><br><br><br>
 
@@ -185,6 +227,50 @@
 
 
   <script src="../js/app.js"></script>
+
+  <script>
+    fetch('products.json')
+      .then(response => response.json())
+      .then(data => {
+        const containerElement = document.querySelector('#coming-soon-sections-container');
+
+        data.forEach((product, index) => {
+          const sectionElement = document.createElement('section');
+          sectionElement.classList.add('section-P');
+          sectionElement.classList.add(product.layout === 'left' ? 'section-left' : 'section-right');
+          sectionElement.id = `coming-soon-section-${index + 1}`;
+
+          const parasElement = document.createElement('div');
+          parasElement.classList.add('paras');
+          sectionElement.appendChild(parasElement);
+
+          const sectionTagElement = document.createElement('p');
+          sectionTagElement.classList.add('sectionTag');
+          sectionTagElement.classList.add('text-big');
+          sectionTagElement.textContent = product.sectionTag;
+          parasElement.appendChild(sectionTagElement);
+
+          const sectionSubTagElement = document.createElement('p');
+          sectionSubTagElement.classList.add('sectionSubTag');
+          sectionSubTagElement.classList.add('text-small');
+          sectionSubTagElement.textContent = product.sectionSubTag;
+          parasElement.appendChild(sectionSubTagElement);
+
+          const thumbnailElement = document.createElement('div');
+          thumbnailElement.classList.add('thumbnail');
+          sectionElement.appendChild(thumbnailElement);
+
+          const thumbnailImageElement = document.createElement('img');
+          thumbnailImageElement.classList.add('imgFluid');
+          thumbnailImageElement.src = product.thumbnailImage;
+          thumbnailImageElement.alt = 'thumbnail image';
+          thumbnailElement.appendChild(thumbnailImageElement);
+
+          containerElement.appendChild(sectionElement);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
 
 </body>
 
