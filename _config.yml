@@ -1,0 +1,21 @@
+defaults:
+  - scope:
+      path: "_products.json"
+    values:
+      content_type: "application/json"
+  - scope:
+      path: "_goldJewellery.json"
+    values:
+      content_type: "application/json"
+  - scope:
+      path: "_silverJewellery.json"
+    values:
+      content_type: "application/json"
+  - scope:
+      path: "_diamondJewellery.json"
+    values:
+      content_type: "application/json"
+  - scope:
+      path: "_platinumJewellery.json"
+    values:
+      content_type: "application/json"
