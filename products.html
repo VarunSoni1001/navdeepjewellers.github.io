@@ -224,12 +224,10 @@
     });
   </script>
 
-
-
   <script src="../js/app.js"></script>
 
   <script>
-    fetch('./_products.json')
+    fetch('/package/_products.json')
       .then(response => response.json())
       .then(data => {
         const containerElement = document.querySelector('#coming-soon-sections-container');
