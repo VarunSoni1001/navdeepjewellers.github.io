@@ -8,19 +8,19 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
 <IfModule mod_headers.c>
-  <Files "/package/_products.json">
+  <Files "/package/products.json">
     Header set Content-Type "application/json"
   </Files>
-  <Files "/package/_goldJewellery.json">
+  <Files "/package/goldJewellery.json">
     Header set Content-Type "application/json"
   </Files>
-  <Files "/package/_silverJewellery.json">
+  <Files "/package/silverJewellery.json">
     Header set Content-Type "application/json"
   </Files>
-  <Files "/package/_diamondJewellery.json">
+  <Files "/package/diamondJewellery.json">
     Header set Content-Type "application/json"
   </Files>
-  <Files "/package/_platinumJewellery.json">
+  <Files "/package/platinumJewellery.json">
     Header set Content-Type "application/json"
   </Files>
 </IfModule>
