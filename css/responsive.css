@@ -22,6 +22,7 @@ input[type="checkbox"] {
     border: 2px solid #ffcc00;
     border-radius: 30px;
     background: #393184b0;
+    /* background: #393184; */
   }
 
     .menu, .menu li{
@@ -67,6 +68,26 @@ input[type="checkbox"] {
   .btnSignUp {
     font-size: smaller;
   }
+
+
+
+
+
+
+
+
+
+  
+  .OP:hover .OP-content {
+    display: none;
+  }
+
+
+
+
+
+
+
 
   input[type="checkbox"]:checked~.menu {
     display: block;

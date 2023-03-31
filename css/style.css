@@ -33,13 +33,13 @@
   background: #ffcc00;
 }
 
-input::placeholder{
+input::placeholder {
   color: #393184;
 }
 
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: .6rem;
   border-radius: .5rem;
   /* background-color: hsl(19, 8%, 75%); */
@@ -48,13 +48,13 @@ input::placeholder{
 
 
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   border-radius: .5rem;
   background-color: hsl(19, 8%, 70%);
   border: 2px solid white;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background-color: hsl(19, 8%, 40%);
 }
 
@@ -158,7 +158,7 @@ li {
   /* font-family: "Baskervville", serif; */
 }
 
-.floatingNav{ 
+.floatingNav {
   border-bottom: 4.5px solid #ffcc00;
   transition: all 0.3s ease-out;
   box-shadow: 0 2px 10px 3px hsla(46, 68%, 32%, 0.5);
@@ -200,7 +200,7 @@ li {
   /* transition: ease; */
 }
 
-.menu li{
+.menu li {
   padding: 5px 14px;
   border-radius: 10px;
 }
@@ -263,7 +263,7 @@ li {
   background-size: cover;
 }
 
-.profileImg-ty{
+.profileImg-ty {
   width: 15%;
   align-items: center;
   justify-content: center;
@@ -321,7 +321,7 @@ li {
   color: #393184;
 }
 
-.map{
+.map {
   height: auto;
 }
 
@@ -336,7 +336,7 @@ li {
   font-family: "Baskervville", serif;
 }
 
-.productTextBig{
+.productTextBig {
   font-size: 30px;
   text-align: center;
   font-weight: bolder;
@@ -362,7 +362,7 @@ li {
   font-family: 'Poppins', sans-serif;
 }
 
-.btnProducts{
+.btnProducts {
   /* border: 2px solid #ffcc00;
   border-radius: 20px; */
   border: none;
@@ -447,7 +447,7 @@ li {
   font-weight: 500;
 }
 
-.faq-q{
+.faq-q {
   font-weight: bolder;
 }
 
@@ -518,7 +518,8 @@ li {
   /* box-shadow: 5px 5px 10px #999; */
   /* cursor: not-allowed; */
 }
-.form-input::placeholder{
+
+.form-input::placeholder {
   color: rgba(128, 128, 128, 0.5);
 }
 
@@ -564,7 +565,7 @@ li {
 
 
 
-.AU span::before{
+.AU span::before {
   content: "\00AB";
   position: absolute;
   opacity: 0;
@@ -572,28 +573,29 @@ li {
   left: -20px;
   transition: 0.4s;
 }
-.AU:hover span{
+
+.AU:hover span {
   padding-left: 25px;
 }
 
-.AU:hover span::before{
+.AU:hover span::before {
   opacity: 1;
   left: 0;
 }
 
 
-.clickHere{
+.clickHere {
   color: #7e670b;
   transition: all 0.3s;
 }
 
-.clickHere:hover{
+.clickHere:hover {
   color: #ffcc00;
 }
 
 
 
-.click{
+.click {
   position: absolute;
   color: #ffcc00;
   border-radius: 10px;
@@ -601,7 +603,7 @@ li {
 }
 
 
-.click::after{
+.click::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -615,7 +617,7 @@ li {
   transition: transform 0.4s ease-out;
 }
 
-.click:hover::after{
+.click:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -626,14 +628,14 @@ li {
 
 
 
-.redirect{
+.redirect {
   font-family: 'Fira Code', monospace;
   font-size: 14px;
 }
 
 
 
-.OP span::before{
+.OP span::before {
   content: "\00AB";
   position: absolute;
   opacity: 0;
@@ -641,11 +643,12 @@ li {
   left: -20px;
   transition: 0.4s;
 }
-.OP:hover span{
+
+.OP:hover span {
   padding-left: 25px;
 }
 
-.OP:hover span::before{
+.OP:hover span::before {
   opacity: 1;
   left: 0;
 }
@@ -655,7 +658,7 @@ li {
 
 
 
-.CU span::before{
+.CU span::before {
   content: "\00AB";
   position: absolute;
   opacity: 0;
@@ -663,11 +666,12 @@ li {
   left: -20px;
   transition: 0.4s;
 }
-.CU:hover span{
+
+.CU:hover span {
   padding-left: 25px;
 }
 
-.CU:hover span::before{
+.CU:hover span::before {
   opacity: 1;
   left: 0;
 }
@@ -676,7 +680,7 @@ li {
 
 
 
-.FAQ span::before{
+.FAQ span::before {
   content: "\00AB";
   position: absolute;
   opacity: 0;
@@ -684,11 +688,12 @@ li {
   left: -20px;
   transition: 0.4s;
 }
-.FAQ:hover span{
+
+.FAQ:hover span {
   padding-left: 25px;
 }
 
-.FAQ:hover span::before{
+.FAQ:hover span::before {
   opacity: 1;
   left: 0;
 }
@@ -878,7 +883,7 @@ hr {
   left: 0%;
 }
 
-.footer-ty a{
+.footer-ty a {
   color: #ffcc00;
 }
 
@@ -887,7 +892,7 @@ hr {
   width: 40px;
 }
 
-.footer a{
+.footer a {
   color: #ffcc00;
 }
 
@@ -995,7 +1000,7 @@ hr {
   /* Increase font size */
   font-weight: bold;
   color: #ffcc00;
-  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.15);
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
 
@@ -1039,10 +1044,61 @@ hr {
 
 
 
-.dataOfForm span{
+.dataOfForm span {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #231b66;
 }
+
+
+
+
+
+
+.OP-content {
+  display: none;
+  position: absolute;
+  /* border: 2px solid rgb(255, 204, 0); */
+  /* border-radius: 30px; */
+  /* background: rgba(57, 49, 132, 0.69); */
+  box-shadow: 0px 20px 15px -15px hsla(46, 68%, 32%, 0.5);
+  background: #393184;
+  border: 1.5px solid #ffcc00;
+  min-width: 170px;
+  border-radius: 10px;
+  /* -webkit-box-shadow: 0px 30px 15px -21px rgba(255, 204, 0, 0.67);
+  -moz-box-shadow: 0px 30px 15px -21px rgba(255, 204, 0, 0.67);
+  box-shadow: 0px 30px 15px -21px rgba(255, 204, 0, 0.67); */
+  z-index: 1;
+  
+}
+
+.OP-content a {
+  float: none;
+  color: #ffcc00;
+  padding: 15px 30px;
+  /* padding: 7%; */
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.OP-content a:hover{
+  color: #b89713;
+  transition: 0.3s ease;
+}
+
+
+.OP:hover .OP-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1061,41 +1117,41 @@ hr {
 
 
 
-#whatsapp:hover{
+#whatsapp:hover {
   color: #25D366;
   transition: all 0.3s;
 }
 
 
-#youtube:hover{
+#youtube:hover {
   color: #CD201F;
   transition: all 0.3s;
 }
 
-#linkedin:hover{
+#linkedin:hover {
   color: #0A66C2;
   transition: all 0.3s;
 }
 
-#facebook:hover{
+#facebook:hover {
   color: #1877F2;
   transition: all 0.3s;
 }
 
-#instagram:hover{
+#instagram:hover {
   color: #E4405F;
   transition: all 0.3s;
 }
 
 
-.productLinks{
+.productLinks {
   color: #393184;
   display: block;
   border: 1px solid #fada3a;
   border-radius: 20px;
 }
 
-.product-button{
+.product-button {
   border-radius: 20px;
 }
 
