@@ -508,8 +508,12 @@ li {
   margin: 50px auto;
 }
 
+
+
+
+
 .form-input {
-  margin: 30px 0px;
+  /* margin: 30px 0px; */
   padding: 10px 15px;
   width: 100%;
   font-size: 18px;
@@ -519,9 +523,6 @@ li {
   /* cursor: not-allowed; */
 }
 
-.form-input::placeholder {
-  color: rgba(128, 128, 128, 0.5);
-}
 
 
 
@@ -1054,8 +1055,6 @@ hr {
 
 
 
-
-
 .OP-content {
   display: none;
   position: absolute;
@@ -1070,12 +1069,11 @@ hr {
   /* -webkit-box-shadow: 0px 30px 15px -21px rgba(255, 204, 0, 0.67);
   -moz-box-shadow: 0px 30px 15px -21px rgba(255, 204, 0, 0.67);
   box-shadow: 0px 30px 15px -21px rgba(255, 204, 0, 0.67); */
-  z-index: 1;
+  z-index: 9999;
   
 }
 
 .OP-content a {
-  float: none;
   color: #ffcc00;
   padding: 15px 30px;
   /* padding: 7%; */
@@ -1096,9 +1094,67 @@ hr {
 
 
 
+/* Chrome, Safari, Edge, Opera */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: transparent !important;
+}
 
 
+.modern-form {
+  width: 100%;
+  margin: 30px auto;
+  background-color:  transparent !important;
+  background: none !important;
+  /* border: solid 1px #ccc; */
+  padding: 20px 10px;
+}
 
+
+.float-label-field {
+  border: none;
+  outline: none;
+  position: relative;
+  margin: 0 0 20px 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.float-label-field input {
+  border: none;
+  outline: none;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: solid 2px #ffcc00;
+  background: transparent;
+}
+
+.float-label-field label {
+  opacity: 0.8;
+  padding-left: 20px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.float-label-field.focus label {
+  color: #393184;
+}
+.float-label-field.focus input {
+  border-bottom: solid 2px #393184;
+  transition: all 0.5s ease;
+}
+.float-label-field.float label {
+  opacity: 1;
+  top: -10px;
+  font-size: 80%;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
 
 
 

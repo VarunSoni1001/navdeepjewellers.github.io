@@ -74,6 +74,76 @@ input[type="checkbox"] {
 
 
 
+
+
+
+
+
+
+
+  .modern-form {
+    width: 100%;
+    margin: 30px auto;
+    background-color:  transparent;
+    /* border: solid 1px #ccc; */
+    padding: 20px 10px;
+  }
+  
+  
+  .float-label-field {
+    border: none;
+    outline: none;
+    position: relative;
+    /* margin: 0 0 20px 0; */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .float-label-field input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    border-bottom: solid 2px #ffcc00;
+    background: transparent;
+  }
+  
+  .float-label-field label {
+    opacity: 1;
+    padding-left: 20px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+  }
+  
+  .float-label-field.focus label {
+    color: #393184;
+  }
+  .float-label-field.focus input {
+    border-bottom: solid 2px #393184;
+  }
+  .float-label-field.float label {
+    opacity: 1;
+    top: -8px;
+    font-size: 70%;
+    transition: all 0.2s ease;
+    font-weight: bold;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
   
   .OP:hover .OP-content {
     display: none;
@@ -217,7 +287,7 @@ input[type="checkbox"] {
   }
 
   .form-input {
-    margin: 20px 0;
+    /* margin: 20px 0; */
     padding: 7px 10px;
     width: 100%;
     font-size: 14px;

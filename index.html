@@ -217,71 +217,80 @@
   <a id="sign-up"></a>
   <br /><br /><br />
   <section class="signup">
+
+    <!-- Main Form -->
     <form id="hidden_action_form" method="POST" onsubmit="getFormData()">
       <br />
       <h2 class="text-center">
-        Sign up/Contact Us to receive exclusive offers and news<br /><br />
-        विशेष ऑफ़र और समाचार प्राप्त करने के लिए साइन अप करें/हमसे संपर्क करें
+          Sign up/Contact Us to receive exclusive offers and news<br /><br />
+          विशेष ऑफ़र और समाचार प्राप्त करने के लिए साइन अप करें/हमसे संपर्क करें
       </h2>
       <br /><br />
 
-      <!-- 
-
 
       <center>
-        <h4 style="color: red;">(SIGN UP IS CURRENTLY DISABLED DUE TO SOME ISSUES)
-          <br>
-          Kindly Contact Us for offers and news.
-          <a href="https://navdeepjewellers.com/contact">Click here.</a>
-        </h4>
-      </center>
-
-
- -->
-
-
-      <center>
-        <hr class="hrDown-logo" />
-        <hr class="signup-hr" />
+          <hr class="hrDown-logo" />
+          <hr class="signup-hr" />
       </center>
       <div class="form">
 
 
-        <input type="text" name="_honey" style="display:none;">
-        <input type="hidden" name="_next" value="https://navdeepjewellers.com/contact/signup/thanks_for_signing">
-        <input type="hidden" name="_subject" value="New form submission on navdeepjewellers.com">
-        <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+          <input type="text" name="_honey" style="display:none;">
+          <input type="hidden" name="_next"
+              value="https://navdeepjewellers.com/contact/signup/thanks_for_signing">
+          <input type="hidden" name="_subject" value="New form submission on navdeepjewellers.com">
+          <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
 
 
-        <label for="name"></label>
-        <p style="font-weight: 500;">Full Name :</p><input class="form-input" type="text" name="name" id="name"
-          placeholder="Ajay Kumar" maxlength="25" required />
-        <label for="phone"></label>
-        <p style="font-weight: 500;">Phone Number :</p><input class="form-input" type="tel" name="phone" id="phone"
-          maxlength="10" pattern="[0-9]{10}" placeholder="xxxxxxxxxx" required />
-        <label for="email"></label>
-        <p style="font-weight: 500;">Email :</p><input class="form-input" type="email" name="email" id="email"
-          placeholder="your@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+          <div class="modern-form">
+             
+
+              <!-- <fieldset class='float-label-field'>
+              <label for="txtName">Name</label>
+              <input id="txtName" type="text">
+            </fieldset>
+
+            <fieldset class='float-label-field'>
+              <label for="txtPhone" >Phone Number</label>
+              <input id="txtPhone" type="tel">
+            </fieldset>
+            
+            <fieldset class='float-label-field'>
+              <label for="txtEmail" >Email</label>
+              <input id="txtEmail" type="email">
+            </fieldset> -->
+              <fieldset class='float-label-field'>
+                  <label for="name">Full Name :</label>
+                  <input class="form-input" type="text" name="name" id="name" maxlength="25" required autocomplete="off"/>
+              </fieldset>
+              <fieldset class='float-label-field'>
+                  <label for="phone">Phone Number :</label>
+                  <input class="form-input" type="tel" name="phone" id="phone" maxlength="10"
+                      pattern="[0-9]{10}" required autocomplete="off"/>
+              </fieldset>
+              <fieldset class='float-label-field'>
+                  <label for="email">Email :</label>
+                  <input class="form-input" type="email" name="email" id="email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="off"/>
+              </fieldset>
+          </div>
 
 
 
 
-
-        <center>
-          <!-- <div class="g-recaptcha" data-sitekey="6LcM7V8kAAAAAEvSRFZoV9kAH1NZHQYk3bEzWvyB" data-theme="light"></div>
-          <br> -->
-          <button type="submit" class="btn btnSignUp"><span>Submit / जमा करे</span></button>
-        </center>
+          <center>
+              <!-- <div class="g-recaptcha" data-sitekey="6LcM7V8kAAAAAEvSRFZoV9kAH1NZHQYk3bEzWvyB" data-theme="light"></div>
+            <br> -->
+              <button type="submit" class="btn btnSignUp"><span>Submit / जमा करे</span></button>
+          </center>
       </div>
       <center>
-        <hr class="signup-hr" />
-        <hr class="hrDown-logo" />
-        <br><br><br>
+          <hr class="signup-hr" />
+          <hr class="hrDown-logo" />
+          <br><br><br>
       </center>
-    </form>
+  </form>
   </section>
-
-
 
 
   <!-- Cookies Consent Block start -->
@@ -392,9 +401,19 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
     }
   </script>
 
+<script>$('head').append('<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">');
 
+  $('input').focus(function (event) {
+      $(this).closest('.float-label-field').addClass('float').addClass('focus');
+  })
 
-
+  $('input').blur(function () {
+      $(this).closest('.float-label-field').removeClass('focus');
+      if (!$(this).val()) {
+          $(this).closest('.float-label-field').removeClass('float');
+      }
+  });
+</script>
 
 </body>
 
