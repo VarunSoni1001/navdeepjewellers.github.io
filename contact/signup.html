@@ -25,21 +25,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-            const formData = JSON.parse(localStorage.getItem("dataOfForm"));
-            if (formData) {
-                const name = formData.name;
-                const email = formData.email;
-                const phone = formData.phone;
-                document.getElementById('Name').textContent = name;
-                document.getElementById('Email').textContent = email;
-                document.getElementById('Phone').textContent = phone;
-                localStorage.removeItem("dataOfForm");
-            }
-        });
-
-    </script>
 
     <title>Sign up for offers/news - Navdeep Jewellers Private Limited</title>
 </head>
@@ -187,7 +172,16 @@
 
     <script src="/js/app.js"></script>
     <script src="/contact/signup/s.js"></script>
-
+    <script>
+        function getFormData() {
+          const form = document.querySelector('#hidden_action_form');
+          const formData = new FormData(form);
+          const name = formData.get('name');
+          const email = formData.get('email');
+          const phone = formData.get('phone');
+          localStorage.setItem('dataOfForm', JSON.stringify({ name, email, phone }));
+        }
+      </script>
     <script>$('head').append('<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">');
 
         $('input').focus(function (event) {
