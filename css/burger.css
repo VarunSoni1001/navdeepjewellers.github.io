@@ -1,0 +1,13 @@
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 8px);
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -6px);
+  transform: rotate(45deg) translate(-6px, -5px);
+}

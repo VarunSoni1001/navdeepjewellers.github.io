@@ -1,0 +1,396 @@
+input[type="checkbox"] {
+  display: none;
+}
+
+.burger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+@media (max-width: 1100px) {
+  .menu{
+    display: none;
+    position: absolute;
+    /* background-color: #ffcc00; */
+    right: 0;
+    text-align: center;
+    padding: 50px 50px;
+    margin-top: 5%;
+    height: 250px;
+    font-size: medium;
+    border: 2px solid #ffcc00;
+    border-radius: 30px;
+    background: #393184b0;
+    /* background: #393184; */
+  }
+
+    .menu, .menu li{
+    animation: nav-menu-open 0.8s forwards;
+  }
+
+
+
+
+  @keyframes nav-menu-open {
+    from{
+      top: -50%;
+    }
+    to{
+      top: 50%;
+    }
+  }
+
+  .g-recaptcha {
+    transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    transform-origin: 0;
+    width: 180px;
+  }
+
+
+  .menu li:hover {
+    display: inline-block;
+    background: none;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+    /* transition: 0.5s ease-out; */
+    /* animation: 0 500ms ease-out; */
+  }
+
+  .signup {
+    background: rgba(205, 190, 56, 0.212) url("../img/bgImageflip4x3.png");
+    background-size: auto;
+  }
+
+  .btnSignUp {
+    font-size: smaller;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .modern-form {
+    width: 100%;
+    margin: 30px auto;
+    background-color:  transparent;
+    /* border: solid 1px #ccc; */
+    padding: 20px 10px;
+  }
+  
+  
+  .float-label-field {
+    border: none;
+    outline: none;
+    position: relative;
+    /* margin: 0 0 20px 0; */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .float-label-field input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    border-bottom: solid 2px #ffcc00;
+    background: transparent;
+  }
+  
+  .float-label-field label {
+    opacity: 1;
+    padding-left: 20px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+  }
+  
+  .float-label-field.focus label {
+    color: #393184;
+  }
+  .float-label-field.focus input {
+    border-bottom: solid 2px #393184;
+  }
+  .float-label-field.float label {
+    opacity: 1;
+    top: -8px;
+    font-size: 70%;
+    transition: all 0.2s ease;
+    font-weight: bold;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  .OP:hover .OP-content {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+  input[type="checkbox"]:checked~.menu {
+    display: block;
+    /* transition: 0.5s; */
+  }
+
+  .click{
+    right: 44.3%;
+  }
+
+  .firstSection {
+    /* height: 180vh; */
+    height: auto;
+  }
+
+  .logo img {
+    width: 145px;
+    margin: 5px -17px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-main {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding-block: 80px;
+  }
+
+  .box-main-ty {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding-block: 80px;
+  }
+
+  .box-main-index {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding-block: 80px;
+  }
+
+  .bluestoneLogo {
+    width: 20%;
+  }
+
+  .profileImg {
+    width: 75px;
+  }
+
+  .secondHalf img {
+    width: 40%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .section {
+    flex-direction: column-reverse;
+  }
+
+  .section-P {
+    flex-direction: column-reverse;
+  }
+
+  .text-small {
+    text-align: center;
+    font-size: small;
+  }
+
+  .text-big {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  .buttons p {
+    font-size: small;
+  }
+
+  .aboutus {
+    text-align: center;
+    font-family: "Baskervville", serif;
+    font-size: 14px;
+    width: 90%;
+    /* font-style: italic; */
+    font-weight: 400;
+  }
+
+  .faq {
+    text-align: center;
+    margin-left: 10%;
+    font-family: "Baskervville", serif;
+    font-size: 14px;
+    width: 80%;
+    /* font-style: italic; */
+    font-weight: 400;
+  }
+
+  .faq-q{
+    font-weight: bold;
+  }
+  
+  .paras {
+    padding: 0px;
+  }
+
+  .background {
+    background-size: auto;
+    /* background: url('../img/bgImage4x3.png'); */
+  }
+
+
+  .social-btn-logo {
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    /* border: 2px solid wheat;
+      background-color: wheat; */
+    border-radius: 20px;
+  }
+
+  .social-btn-logo:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  .form-input {
+    /* margin: 20px 0; */
+    padding: 7px 10px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #393184b0;
+    border-radius: 10px;
+  }
+
+  .typewriter-text {
+    letter-spacing: -1px;
+    font-size: medium;
+  }
+
+  .quotationMarks-left {
+    text-align: left;
+    font-size: 60px;
+    padding-left: 25px;
+  }
+
+  .quotationMarks-right {
+    text-align: right;
+    font-size: 60px;
+    padding-right: 25px;
+  }
+
+  .text-center {
+    /* text-align: center; */
+    font-size: medium;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #reviews {
+    border-radius: 2px 100px 100px 100px;
+    border-left: 1.5px solid #393184;
+    border-right: 10px solid #393184;
+    border-bottom: 8px solid #393184;
+    border-top: 2px solid #393184;
+    box-shadow: 5px 5px 10px #fada3a;
+  }
+
+  .phonelogo {
+    font-size: large;
+  }
+
+  .phonelogo img {
+    width: 3%;
+    font-size: large;
+  }
+
+  .motoEng {
+    font-family: "Licorice", cursive;
+    font-size: 30px;
+  }
+
+  .motoHindi {
+    font-family: "Kalam", cursive;
+    font-size: 20px;
+  }
+
+  .motobyeng {
+    font-size: 20px;
+  }
+
+  .motobyhindi {
+    font-size: 15px;
+  }
+
+  .footer {
+    font-size: 9px;
+  }
+
+  .footer-ty{
+    font-size: 9px;
+  }
+
+  #myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 20px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 2px solid #ffcc00;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #393184;
+    /* Set a background color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 13px 18px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Increase font size */
+    font-weight: bold;
+    color: #ffcc00;
+  }
+
+  
+}

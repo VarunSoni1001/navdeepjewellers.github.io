@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#393184">
+  <link rel="canonical" href="https://navdeepjewellers.com/products/goldjewellery" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/burger.css">
+  <link rel="icon" type="image/png" href="/img/onlylogo.png">
+  <link rel="apple-touch-icon" href="/img/onlylogo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dc4a102c1a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Gold Jewellery - Navdeep Jewellers Private Limited</title>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+
+  <nav class="navbar  background1" id="navBar">
+    <div class="logo"><a href="/"><img src="/img/logonavdeep.png" alt="logo"></a></div>
+
+    <ul class="nav-links">
+
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="burger" onclick="myFunction(this)">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </label>
+      <div class="menu">
+
+        <li class="AU"><span><a href="https://navdeepjewellers.com/about">About Us</a></span></li>
+        <li class="OP"><span><a href="https://navdeepjewellers.com/products">Our Products</a></span>
+          <div class="OP-content">
+            <a href="https://navdeepjewellers.com/products/goldjewellery">Gold</a>
+            <a href="https://navdeepjewellers.com/products/silverjewellery">Silver</a>
+            <a href="https://navdeepjewellers.com/products/diamondjewellery">Diamond</a>
+            <a href="https://navdeepjewellers.com/products/platinumjewellery">Platinum</a>
+          </div>
+        </li>
+        <li class="CU"><span><a href="https://navdeepjewellers.com/contact">Contact Us</a></span></li>
+        <li class="FAQ">
+          <span><a href="https://navdeepjewellers.com/faqs">FAQs</a></span>
+        </li>
+      </div>
+    </ul>
+  </nav>
+
+
+
+
+  <center style="margin: 50px;">
+    <div class="typewriter">
+      <div class="typewriter-text">
+        <p class="text-big"><u>Gold Jewellery</u></p>
+      </div>
+    </div>
+
+  </center>
+
+
+  <div id="coming-soon-sections-container"></div>
+
+
+
+
+
+
+  <br><br><br><br>
+
+  <footer class="footer">
+    &copy; 2023 <a href="/"> Navdeep Jewellers Private Limited.</a> All Rights Reserved.
+  </footer>
+
+
+
+
+  <div class="loader-wrapper">
+    <span class="loader">
+      <span class="loader-inner">
+      </span>
+    </span>
+    <br><br>
+    <p
+      style="font-family: 'Josefin Slab', serif; font-weight: bolder; font-size: xx-large; margin-left: 10px;color: #393184; text-shadow: 5px 6px 3px #fada3a;">
+      Loading.....</p>
+  </div>
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+
+
+
+  <script src="/js/app.js"></script>
+
+  <script>
+    fetch('/package/goldJewellery.json')
+      .then(response => response.json())
+      .then(data => {
+        const containerElement = document.querySelector('#coming-soon-sections-container');
+
+        data.forEach((product, index) => {
+          const sectionElement = document.createElement('section');
+          sectionElement.classList.add('section-P');
+          sectionElement.classList.add(product.layout === 'left' ? 'section-left' : 'section-right');
+          sectionElement.id = `coming-soon-section-${index + 1}`;
+
+
+          // const linkElement = document.createElement('a');
+          // linkElement.classList.add('productLinks');
+          // linkElement.classList.add('sectionSubTag');
+          // linkElement.setAttribute('href', product.url);
+          // linkElement.textContent = 'Click here to know more about ' + product.title;
+          // sectionElement.appendChild(linkElement);
+
+
+          const hrElement = document.createElement('hr');
+          hrElement.style.width = '100%';
+
+
+
+
+          const parasElement = document.createElement('div');
+          parasElement.classList.add('paras');
+
+
+
+          sectionElement.appendChild(parasElement);
+
+          const sectionTagElement = document.createElement('p');
+          sectionTagElement.classList.add('sectionTag');
+          sectionTagElement.classList.add('productTextBig');
+          sectionTagElement.textContent = product.title;
+          sectionTagElement.style.textAlign = 'center';
+          parasElement.appendChild(sectionTagElement);
+
+          const sectionSubTagElement = document.createElement('p');
+          sectionSubTagElement.classList.add('sectionSubTag');
+          sectionSubTagElement.classList.add('text-small');
+          sectionSubTagElement.textContent = product.sectionSubTag;
+          parasElement.appendChild(sectionSubTagElement);
+
+          // const buttonElement = document.createElement('button');
+          // buttonElement.classList.add('btnProducts');
+          // buttonElement.textContent = 'Click here to know more about ' + product.title;
+          // buttonElement.onclick = function () {
+          //   window.location.href = product.url;
+          // };
+
+
+          //--  for link in the jewellery type START --//
+
+          // const buttonElement = document.createElement('button');
+          // buttonElement.classList.add('btnProducts');
+          // buttonElement.onclick = function () {
+          //   window.location.href = product.url;
+          // };
+
+          // const buttonTextElement = document.createTextNode('Know more about ');
+          // buttonElement.appendChild(buttonTextElement);
+
+          // const titleSpanElement = document.createElement('span');
+          // titleSpanElement.textContent = product.title;
+          // titleSpanElement.style.color = '#786000';
+          // titleSpanElement.style.fontSize = '14px';
+          // buttonElement.appendChild(titleSpanElement);
+
+          // document.body.appendChild(buttonElement);
+
+          // sectionSubTagElement.appendChild(buttonElement);
+
+
+          //--  for link in the jewellery type END --//
+
+
+          sectionTagElement.appendChild(hrElement);
+
+          const thumbnailElement = document.createElement('div');
+          thumbnailElement.classList.add('thumbnail');
+          sectionElement.appendChild(thumbnailElement);
+
+          const thumbnailImageElement = document.createElement('img');
+          thumbnailImageElement.classList.add('imgFluid');
+          thumbnailImageElement.src = product.thumbnailImage;
+          thumbnailImageElement.alt = 'thumbnail image';
+          thumbnailElement.appendChild(thumbnailImageElement);
+
+          containerElement.appendChild(sectionElement);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+
+</body>
+
+</html>
