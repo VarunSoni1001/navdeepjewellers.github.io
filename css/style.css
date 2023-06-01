@@ -144,6 +144,7 @@ li {
   width: 85%;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -433,10 +434,10 @@ li {
 .aboutus {
   text-align: center;
   font-family: "Baskervville", serif;
-  font-size: 20px;
-  width: 90%;
+  font-size: 19px;
+  width: 100%;
   /* font-style: italic; */
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .faq {
