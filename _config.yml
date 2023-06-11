@@ -11,11 +11,11 @@ defaults:
       path: "/package/silverJewellery.json"
     values:
       content_type: "application/json"
-  - scope:
-      path: "/package/diamondJewellery.json"
-    values:
-      content_type: "application/json"
-  - scope:
-      path: "/package/platinumJewellery.json"
-    values:
-      content_type: "application/json"
+  # - scope:
+  #     path: "/package/diamondJewellery.json"
+  #   values:
+  #     content_type: "application/json"
+  # - scope:
+  #     path: "/package/platinumJewellery.json"
+  #   values:
+  #     content_type: "application/json"

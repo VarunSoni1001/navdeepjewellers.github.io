@@ -14,21 +14,5 @@
         "thumbnailImage": "/img/comingsoon.jpg",
         "title":"SILVER JEWELLERY",
         "url": "https://navdeepjewellers.com/products/silverjewellery"
-    },
-    {
-        "layout": "right",
-        "sectionTag": "",
-        "sectionSubTag": "",
-        "thumbnailImage": "/img/comingsoon.jpg",
-        "title":"DIAMOND JEWELLERY",
-        "url": "https://navdeepjewellers.com/products/diamondjewellery"
-    },
-    {
-        "layout": "right",
-        "sectionTag": "",
-        "sectionSubTag": "",
-        "thumbnailImage": "/img/comingsoon.jpg",
-        "title":"PLATINUM JEWELLERY",
-        "url": "https://navdeepjewellers.com/products/platinumjewellery"
     }
 ]

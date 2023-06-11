@@ -58,8 +58,7 @@
           <div class="OP-content">
             <a href="https://navdeepjewellers.com/products/goldjewellery">Gold</a>
             <a href="https://navdeepjewellers.com/products/silverjewellery">Silver</a>
-            <a href="https://navdeepjewellers.com/products/diamondjewellery">Diamond</a>
-            <a href="https://navdeepjewellers.com/products/platinumjewellery">Platinum</a>
+             
           </div>
         </li>
         <li class="CU">
@@ -308,30 +307,7 @@
       </div>
     </div>
   </div>
-  <script>
-    const cookieBox = document.querySelector(".cookie-consent"),
-      acceptBtn = cookieBox.querySelector("button");
-    acceptBtn.onclick = () => {
-      //setting cookie for 1 month, after one month it'll be expired automatically
-      document.cookie = "_consent=ndj; max-age=" + 60 * 60 * 24 * 30;
-      if (document.cookie) { //if cookie is set
-        cookieBox.classList.add("hide"); //hide cookie box
-      } else { //if cookie not set then alert an error
-        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
-      }
-    }
-    let checkCookie = document.cookie.indexOf("_consent=ndj"); //checking our cookie
-    //if cookie is set then hide the cookie box else show it
-    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-  </script>
-
-  <!-- <script>
-  // Set a same-site cookie for first-party contexts
-document.cookie = 'cookie1=value1; SameSite=Lax';
-// Set a cross-site cookie for third-party contexts
-document.cookie = 'cookie2=value2; SameSite=None; Secure';
-</script> -->
-
+  <script src="/cookie.js" defer></script>
 
 
 
@@ -375,18 +351,6 @@ document.cookie = 'cookie2=value2; SameSite=None; Secure';
 
   <script src="contact/signup/s.js"></script>
   <script src="js/app.js"></script>
-
-  <!-- <script>
-
-    window.addEventListener('load', () => {
-      const $recaptcha = document.querySelector('#g-recaptcha-response');
-      if ($recaptcha) {
-        $recaptcha.setAttribute('required', 'required');
-      }
-    })
-
-  </script> -->
-
 
 
 

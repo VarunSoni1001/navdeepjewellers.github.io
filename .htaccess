@@ -17,10 +17,4 @@ RewriteRule ^([^\.]+)$ $1.html [NC, L]
   <Files "/package/silverJewellery.json">
     Header set Content-Type "application/json"
   </Files>
-  <Files "/package/diamondJewellery.json">
-    Header set Content-Type "application/json"
-  </Files>
-  <Files "/package/platinumJewellery.json">
-    Header set Content-Type "application/json"
-  </Files>
 </IfModule>

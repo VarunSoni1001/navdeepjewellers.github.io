@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="/css/burger.css">
   <link rel="icon" type="image/png" href="/img/onlylogo.png">
   <link rel="apple-touch-icon" href="/img/onlylogo.png" />
-
+  <link rel="stylesheet" href="/css/cookie.css">
+  <link rel="stylesheet" href="/css/resp_cookie.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -42,8 +43,7 @@
           <div class="OP-content">
             <a href="https://navdeepjewellers.com/products/goldjewellery">Gold</a>
             <a href="https://navdeepjewellers.com/products/silverjewellery">Silver</a>
-            <a href="https://navdeepjewellers.com/products/diamondjewellery">Diamond</a>
-            <a href="https://navdeepjewellers.com/products/platinumjewellery">Platinum</a>
+             
           </div>
         </li>
         <li class="CU"><span><a href="https://navdeepjewellers.com/contact">Contact Us</a></span></li>
@@ -70,7 +70,26 @@
   <div id="coming-soon-sections-container"></div>
 
 
+  <!-- Cookies Consent Block start -->
 
+
+
+  <div class="cookie-consent">
+    <img src="/img/cookie_img.png" alt="Cookie">
+    <div class="consent">
+      <header>Cookies Policy</header>
+      <p>This website use cookies to ensure you get the best experience.</p>
+      <div class="cookie-consent-buttons">
+        <button class="item"><span>Got it</span></button>
+        <!-- <a href="#" class="item">Learn more</a> -->
+      </div>
+    </div>
+  </div>
+  <script src="/cookie.js" defer></script>
+
+
+
+  <!-- Cookies Consent Block end -->
 
 
 
@@ -116,13 +135,6 @@
           sectionElement.id = `coming-soon-section-${index + 1}`;
 
 
-          // const linkElement = document.createElement('a');
-          // linkElement.classList.add('productLinks');
-          // linkElement.classList.add('sectionSubTag');
-          // linkElement.setAttribute('href', product.url);
-          // linkElement.textContent = 'Click here to know more about ' + product.title;
-          // sectionElement.appendChild(linkElement);
-
 
           const hrElement = document.createElement('hr');
           hrElement.style.width = '100%';
@@ -150,37 +162,7 @@
           sectionSubTagElement.textContent = product.sectionSubTag;
           parasElement.appendChild(sectionSubTagElement);
 
-          // const buttonElement = document.createElement('button');
-          // buttonElement.classList.add('btnProducts');
-          // buttonElement.textContent = 'Click here to know more about ' + product.title;
-          // buttonElement.onclick = function () {
-          //   window.location.href = product.url;
-          // };
-
-
-          //--  for link in the jewellery type START --//
-
-          // const buttonElement = document.createElement('button');
-          // buttonElement.classList.add('btnProducts');
-          // buttonElement.onclick = function () {
-          //   window.location.href = product.url;
-          // };
-
-          // const buttonTextElement = document.createTextNode('Know more about ');
-          // buttonElement.appendChild(buttonTextElement);
-
-          // const titleSpanElement = document.createElement('span');
-          // titleSpanElement.textContent = product.title;
-          // titleSpanElement.style.color = '#786000';
-          // titleSpanElement.style.fontSize = '14px';
-          // buttonElement.appendChild(titleSpanElement);
-
-          // document.body.appendChild(buttonElement);
-
-          // sectionSubTagElement.appendChild(buttonElement);
-
-
-          //--  for link in the jewellery type END --//
+        
 
 
           sectionTagElement.appendChild(hrElement);
